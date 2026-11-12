@@ -1,0 +1,253 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+/* Theme switch: data-theme on <html> (lib/theme.ts). Dark is the default. */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/*
+ * Colour roles from the «Основы» board (Sendler Dash canvas). Every component uses roles,
+ * never hexes, so the light theme is the same roles with its own steps.
+ * Light-theme values the board leaves open (surface-2, fg-2, fg-3, neutral and the soft
+ * accent text) were picked for ≥ 4.5:1 on #FFFFFF and #F5F7FA — see theme.test.ts.
+ */
+:root,
+[data-theme="dark"] {
+  --bg: #0B0E14;
+  --surface: #121722;
+  --surface-2: #1A2130;
+  --inset: #0E131C;            /* cards inside a widget, bottom bar */
+  --line: #222B3B;
+  --line-soft: #1C2433;        /* widget header / footer dividers */
+  --row-line: #182030;         /* between rows */
+  --fg: #E8EDF4;
+  --fg-2: #A3AEC0;
+  --fg-3: #8592A6;
+  --brand: #6F7FF0;
+  --brand-fg: #0B0E14;         /* text on an accent fill */
+  --brand-text: #9AA6FF;       /* links, «Все … →» */
+  --brand-soft-fg: #AEB7FF;    /* tag text on brand-soft */
+  --brand-soft: rgb(111 127 240 / 0.16);
+  --brand-row: rgb(111 127 240 / 0.06);
+  --up: #1FA673;
+  --up-fg: #34C98E;
+  --down: #E5534B;
+  --down-fg: #FF7A70;
+  --down-soft: rgb(229 83 75 / 0.12);
+  --down-soft-fg: #FF9C93;
+  --amber: #C2871C;
+  --amber-fg: #E6A93A;
+  --amber-soft: rgb(194 135 28 / 0.14);
+  --neutral: #5A6478;
+  --skeleton: #1A2130;
+  --empty-icon: #3B4766;
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #F5F7FA;
+  --surface: #FFFFFF;
+  --surface-2: #EEF1F6;
+  --inset: #F5F7FA;
+  --line: #E3E8EF;
+  --line-soft: #E9EDF3;
+  --row-line: #EEF1F5;
+  --fg: #0E1420;
+  --fg-2: #4A5568;
+  --fg-3: #5D6878;
+  --brand: #4F5FD8;
+  --brand-fg: #FFFFFF;
+  --brand-text: #4352C9;
+  --brand-soft-fg: #3A49BE;
+  --brand-soft: rgb(79 95 216 / 0.10);
+  --brand-row: rgb(79 95 216 / 0.05);
+  --up: #14855C;
+  --up-fg: #11744F;
+  --down: #D03E3E;
+  --down-fg: #BB3434;
+  --down-soft: rgb(208 62 62 / 0.09);
+  --down-soft-fg: #B23131;
+  --amber: #A86F0E;
+  --amber-fg: #8E5D0B;
+  --amber-soft: rgb(168 111 14 / 0.12);
+  --neutral: #5F6A7D;
+  --skeleton: #E9EDF3;
+  --empty-icon: #B6BFCC;
+  color-scheme: light;
+}
+
+/*
+ * Safe areas. Inside Telegram full screen the SDK reports the status bar (--tg-safe-area-inset-*)
+ * and the band of Telegram's own buttons under it (--tg-content-safe-area-inset-*): the page starts
+ * below both. Outside Telegram those are unset — 0 at the top, the phone's own inset at the bottom.
+ */
+:root {
+  --safe-top: calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px));
+  --safe-bottom: max(env(safe-area-inset-bottom), calc(var(--tg-safe-area-inset-bottom, 0px) + var(--tg-content-safe-area-inset-bottom, 0px)));
+}
+
+@theme inline {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-inset: var(--inset);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-row-line: var(--row-line);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-fg-3: var(--fg-3);
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-brand-text: var(--brand-text);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-soft-fg: var(--brand-soft-fg);
+  --color-brand-row: var(--brand-row);
+  --color-up: var(--up);
+  --color-up-fg: var(--up-fg);
+  --color-down: var(--down);
+  --color-down-fg: var(--down-fg);
+  --color-down-soft: var(--down-soft);
+  --color-down-soft-fg: var(--down-soft-fg);
+  --color-amber: var(--amber);
+  --color-amber-fg: var(--amber-fg);
+  --color-amber-soft: var(--amber-soft);
+  --color-neutral: var(--neutral);
+  --color-skeleton: var(--skeleton);
+
+  /* shadcn names, so the copied primitives keep working */
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-muted-foreground: var(--fg-2);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--fg);
+  --color-accent: var(--surface-2);
+  --color-accent-foreground: var(--fg);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--brand);
+  --color-destructive: var(--down);
+
+  --radius-widget: 14px;
+}
+
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+  html {
+    background: var(--bg);
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  sub {
+    font-size: 0.72em;
+    vertical-align: -0.25em;
+    line-height: 0;
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+}
+
+/* Active tab trigger (copied shadcn Tabs) — the segmented control of the widget header. */
+[data-slot="tabs-trigger"][data-state="active"] {
+  background: var(--line);
+  color: var(--fg);
+}
+
+/* A new row slides in from the top and stays highlighted for 3 s (States board). */
+@keyframes row-enter {
+  from { transform: translateY(-8px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+@keyframes row-glow {
+  0%, 85% { background-color: var(--brand-row); box-shadow: inset 3px 0 0 var(--brand); }
+  100% { background-color: transparent; box-shadow: inset 3px 0 0 transparent; }
+}
+.row-new {
+  animation: row-enter 180ms ease-out, row-glow 3s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .row-new {
+    animation: row-glow 3s linear;
+  }
+  *, *::before, *::after {
+    transition-duration: 0ms !important;
+  }
+  /* Enter / exit animations (tw-animate-css: widgets fading in, sheets and dialogs sliding) and
+     smooth scrolling: off. The row glow above stays — it is a colour, not motion. */
+  .animate-in, .animate-out, [data-state="open"], [data-state="closed"] {
+    animation-duration: 1ms !important;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes skeleton-pulse {
+  50% { opacity: 0.55; }
+}
+.skeleton {
+  background: var(--skeleton);
+  border-radius: 6px;
+  animation: skeleton-pulse 1.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}
+
+/* Scrollbars: thin, in the page's own colours. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-button {
+  display: none;
+}
