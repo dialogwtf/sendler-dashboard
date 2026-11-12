@@ -6,6 +6,7 @@
 - holders.py - balances of launch tokens from NEP-141 events;
 - blocks.py / network.py - big transfers, new contracts / tokens / pools, network metrics (HyperLogLog signers);
 - smart.py - smart money: per-wallet flows and the hourly ranking;
+- launch_stats.py - what each creator did with his own tokens; reference.py - USD rates and token metadata;
 - events.py - capped event feed for the API's WebSocket, account labels;
 - history.py - history before the live start (scripts/backfill_dash.py).
 """

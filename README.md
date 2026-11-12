@@ -89,13 +89,15 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173 — see trades, big moves and network metrics filling in from your own indexer within a
-minute; launches appear as they happen on mainnet (every few minutes), smart money after enough history is collected
-(the ranking needs wallets with at least 5 traded tokens).
+Open http://localhost:5173 — see trades, big moves and network metrics from your own indexer. With an API key
+(see the note below) they keep filling in; launches appear as they happen on mainnet (every few minutes), smart money
+after enough history is collected (the ranking needs wallets with at least 5 traded tokens).
 
-**Note on the block source.** Without `NEAR_DATA_API_KEY` the public neardata endpoint rate-limits the stream (HTTP
-429) after a few seconds; the indexer keeps retrying and refetches gaps, so data still arrives, with pauses. For a
-continuous stream use a FastNear key.
+**Note on the block source.** Without `NEAR_DATA_API_KEY` the public neardata endpoint serves a short burst — about
+50 blocks, half a minute of chain time — and then throttles the stream hard (HTTP 429 in the log). That is enough to
+see every part of the pipeline work end to end (trades, candles, big moves, network, USD rates, token metadata), but
+not to fill the dashboard. For a continuous stream set a FastNear API key; the production deployment behind
+https://dash.sendler.xyz runs this same code with one.
 
 ### Tests
 

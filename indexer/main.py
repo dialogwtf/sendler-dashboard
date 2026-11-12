@@ -39,6 +39,15 @@ async def main() -> None:
     async with aiohttp.ClientSession() as session:
         stream = BlockStream(Settings.NEAR_DATA_API, Settings.NEAR_DATA_API_KEY, session)
         block_stream.STREAM = stream
+        reference = Settings.DASH_ENABLED and Settings.DASH_REFERENCE
+        prices = FtPrices(db, session, Settings.REF_PRICES_URL)
+        if reference:
+            # a fresh database has no USD rates yet, and the worker reads them once on start: without this the first
+            # minutes would have no dollar values and no big moves (those are selected by their dollar value)
+            try:
+                await prices.poll_once()
+            except Exception as e:  # noqa: BLE001 - the background task retries every minute
+                logger.warning("USD rates not loaded on start: %s", str(e)[:200])
         worker = DashWorker(db=db, stream=stream)
         tasks = [asyncio.create_task(stream.run(), name="block_stream"),
                  asyncio.create_task(worker.run(), name="dashboard"),
@@ -52,8 +61,8 @@ async def main() -> None:
             stats = LaunchStats(db)
             await stats.start()
             stream.subscribe(stats.handle)
-        if Settings.DASH_ENABLED and Settings.DASH_REFERENCE:
-            tasks.append(asyncio.create_task(FtPrices(db, session, Settings.REF_PRICES_URL).run(), name="ft_prices"))
+        if reference:
+            tasks.append(asyncio.create_task(prices.run(), name="ft_prices"))
             tasks.append(asyncio.create_task(TokenMeta(db, session, Settings.NEAR_RPC_URL).run(), name="token_meta"))
 
         stop = asyncio.Event()
