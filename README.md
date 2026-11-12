@@ -6,6 +6,15 @@ candles, holders, smart money, big transfers, new contracts and pools, network l
 **Live:** https://dash.sendler.xyz · **API:** https://api.sendler.xyz/v2/dash/health · built at NEAR HACKATHON
 (November 2026), track **Investment Thesis** (onchain data, dashboards).
 
+![Sendler Dash: launch feed, rising tokens, smart money, big moves and network metrics, all live](docs/screenshots/home.png)
+
+<p>
+  <img src="docs/screenshots/token.png" width="72%" alt="Token page: market cap chart, creator dossier, smart money in the token, holders, live trades">
+  <img src="docs/screenshots/phone.png" width="24%" alt="Phone: one live feed of launches, new pools and big moves">
+</p>
+
+*Screenshots of https://dash.sendler.xyz taken on 12 November 2026: the home screen, a token page, the phone layout.*
+
 **The thesis:** [THESIS.md](THESIS.md) — what three months of this data say about NEAR's on-chain trading economy,
 with the evidence for, the evidence against, and the numbers that would change the conclusion. Rebuild every chart
 and number with `python thesis/build.py`.
