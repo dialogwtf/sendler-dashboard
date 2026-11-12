@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 364" width="880" height="364" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="New token launches per day peaked in mid-October">
+<rect width="880" height="364" fill="#1a1a19"/>
+<text x="24.0" y="30.0" fill="#f0efec" font-size="15" font-weight="600" text-anchor="start">New token launches per day peaked in mid-October</text>
+<text x="24.0" y="49.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="start">Average launches per day per week, by launchpad; week starts on the date shown</text>
+<rect x="64" y="69" width="10" height="10" rx="2" fill="#3987e5"/>
+<text x="80.0" y="78.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="start">Nearly</text>
+<rect x="133.6" y="69" width="10" height="10" rx="2" fill="#d95926"/>
+<text x="149.6" y="78.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="start">JustHoot</text>
+<line x1="64" x2="852" y1="330.0" y2="330.0" stroke="#383835" stroke-width="1"/>
+<text x="56.0" y="334.0" fill="#898781" font-size="11" font-weight="400" text-anchor="end">0</text>
+<line x1="64" x2="852" y1="272.5" y2="272.5" stroke="#2c2c2a" stroke-width="1"/>
+<text x="56.0" y="276.5" fill="#898781" font-size="11" font-weight="400" text-anchor="end">20</text>
+<line x1="64" x2="852" y1="215.0" y2="215.0" stroke="#2c2c2a" stroke-width="1"/>
+<text x="56.0" y="219.0" fill="#898781" font-size="11" font-weight="400" text-anchor="end">40</text>
+<line x1="64" x2="852" y1="157.5" y2="157.5" stroke="#2c2c2a" stroke-width="1"/>
+<text x="56.0" y="161.5" fill="#898781" font-size="11" font-weight="400" text-anchor="end">60</text>
+<line x1="64" x2="852" y1="100.0" y2="100.0" stroke="#2c2c2a" stroke-width="1"/>
+<text x="56.0" y="104.0" fill="#898781" font-size="11" font-weight="400" text-anchor="end">80</text>
+<path d="M117.7,330.0 V200.2 Q117.7,200.2 117.7,200.2 H141.7 Q141.7,200.2 141.7,200.2 V330.0 Z" fill="#3987e5"/>
+<path d="M117.7,198.2 V176.3 Q117.7,172.3 121.7,172.3 H137.7 Q141.7,172.3 141.7,176.3 V198.2 Z" fill="#d95926"/>
+<text x="129.7" y="346.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">Oct 5</text>
+<path d="M249.0,330.0 V185.0 Q249.0,185.0 249.0,185.0 H273.0 Q273.0,185.0 273.0,185.0 V330.0 Z" fill="#3987e5"/>
+<path d="M249.0,183.0 V151.6 Q249.0,147.6 253.0,147.6 H269.0 Q273.0,147.6 273.0,151.6 V183.0 Z" fill="#d95926"/>
+<text x="261.0" y="346.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">Oct 12</text>
+<path d="M380.3,330.0 V239.6 Q380.3,239.6 380.3,239.6 H404.3 Q404.3,239.6 404.3,239.6 V330.0 Z" fill="#3987e5"/>
+<path d="M380.3,237.6 V160.7 Q380.3,156.7 384.3,156.7 H400.3 Q404.3,156.7 404.3,160.7 V237.6 Z" fill="#d95926"/>
+<text x="392.3" y="346.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">Oct 19</text>
+<path d="M511.7,330.0 V265.1 Q511.7,265.1 511.7,265.1 H535.7 Q535.7,265.1 535.7,265.1 V330.0 Z" fill="#3987e5"/>
+<path d="M511.7,263.1 V233.4 Q511.7,229.4 515.7,229.4 H531.7 Q535.7,229.4 535.7,233.4 V263.1 Z" fill="#d95926"/>
+<text x="523.7" y="346.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">Oct 26</text>
+<path d="M643.0,330.0 V306.2 Q643.0,306.2 643.0,306.2 H667.0 Q667.0,306.2 667.0,306.2 V330.0 Z" fill="#3987e5"/>
+<path d="M643.0,304.2 V286.4 Q643.0,282.4 647.0,282.4 H663.0 Q667.0,282.4 667.0,286.4 V304.2 Z" fill="#d95926"/>
+<text x="655.0" y="346.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">Nov 2</text>
+<path d="M774.3,330.0 V271.8 Q774.3,271.8 774.3,271.8 H798.3 Q798.3,271.8 798.3,271.8 V330.0 Z" fill="#3987e5"/>
+<path d="M774.3,269.8 V254.2 Q774.3,250.2 778.3,250.2 H794.3 Q798.3,250.2 798.3,254.2 V269.8 Z" fill="#d95926"/>
+<text x="786.3" y="346.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">Nov 9</text>
+</svg>

@@ -1,0 +1,2014 @@
+{
+ "generated_at": "2026-11-12T09:43:01Z",
+ "near_usd": 3.49,
+ "dex_daily": [
+  {
+   "day": "2026-08-11",
+   "near": 28899.67,
+   "usd": 45519.12,
+   "trades": 318,
+   "tokens": 24,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 44
+  },
+  {
+   "day": "2026-08-13",
+   "near": 14644.13,
+   "usd": 24093.71,
+   "trades": 522,
+   "tokens": 31,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 71
+  },
+  {
+   "day": "2026-08-14",
+   "near": 40415.06,
+   "usd": 64787.13,
+   "trades": 876,
+   "tokens": 46,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 164
+  },
+  {
+   "day": "2026-08-15",
+   "near": 52199.5,
+   "usd": 85524.1,
+   "trades": 639,
+   "tokens": 41,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 148
+  },
+  {
+   "day": "2026-08-16",
+   "near": 83565.99,
+   "usd": 134936.07,
+   "trades": 606,
+   "tokens": 37,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 120
+  },
+  {
+   "day": "2026-08-17",
+   "near": 51035.19,
+   "usd": 83281.22,
+   "trades": 642,
+   "tokens": 42,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 127
+  },
+  {
+   "day": "2026-08-18",
+   "near": 57758.4,
+   "usd": 93737.79,
+   "trades": 725,
+   "tokens": 39,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 122
+  },
+  {
+   "day": "2026-08-19",
+   "near": 239767.55,
+   "usd": 402124.37,
+   "trades": 1333,
+   "tokens": 47,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 190
+  },
+  {
+   "day": "2026-08-20",
+   "near": 144733.74,
+   "usd": 252653.55,
+   "trades": 1131,
+   "tokens": 51,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 174
+  },
+  {
+   "day": "2026-08-21",
+   "near": 605379.09,
+   "usd": 1146909.99,
+   "trades": 2474,
+   "tokens": 51,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 178
+  },
+  {
+   "day": "2026-08-22",
+   "near": 743619.38,
+   "usd": 1449589.53,
+   "trades": 3187,
+   "tokens": 54,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 186
+  },
+  {
+   "day": "2026-08-23",
+   "near": 677034.64,
+   "usd": 1335178.19,
+   "trades": 3149,
+   "tokens": 47,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 193
+  },
+  {
+   "day": "2026-08-24",
+   "near": 284970.43,
+   "usd": 567430.5,
+   "trades": 3026,
+   "tokens": 51,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 206
+  },
+  {
+   "day": "2026-08-25",
+   "near": 460262.92,
+   "usd": 886406.12,
+   "trades": 3927,
+   "tokens": 54,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 202
+  },
+  {
+   "day": "2026-08-26",
+   "near": 238014.52,
+   "usd": 443168.81,
+   "trades": 2117,
+   "tokens": 49,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 204
+  },
+  {
+   "day": "2026-08-27",
+   "near": 182896.53,
+   "usd": 348402.19,
+   "trades": 1966,
+   "tokens": 49,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 176
+  },
+  {
+   "day": "2026-08-28",
+   "near": 69829.82,
+   "usd": 129918.2,
+   "trades": 2054,
+   "tokens": 95,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 187
+  },
+  {
+   "day": "2026-08-29",
+   "near": 47894.46,
+   "usd": 87821.61,
+   "trades": 925,
+   "tokens": 41,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 152
+  },
+  {
+   "day": "2026-08-30",
+   "near": 476112.38,
+   "usd": 899660.56,
+   "trades": 1627,
+   "tokens": 35,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 162
+  },
+  {
+   "day": "2026-08-31",
+   "near": 67144.03,
+   "usd": 125131.63,
+   "trades": 1082,
+   "tokens": 42,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 157
+  },
+  {
+   "day": "2026-09-01",
+   "near": 168364.09,
+   "usd": 328626.94,
+   "trades": 2450,
+   "tokens": 49,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 177
+  },
+  {
+   "day": "2026-09-02",
+   "near": 99778.14,
+   "usd": 185523.94,
+   "trades": 1386,
+   "tokens": 46,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 149
+  },
+  {
+   "day": "2026-09-03",
+   "near": 104492.99,
+   "usd": 205291.21,
+   "trades": 1529,
+   "tokens": 53,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 172
+  },
+  {
+   "day": "2026-09-04",
+   "near": 271434.56,
+   "usd": 545906.37,
+   "trades": 3458,
+   "tokens": 57,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 184
+  },
+  {
+   "day": "2026-09-05",
+   "near": 207169.07,
+   "usd": 461094.39,
+   "trades": 3237,
+   "tokens": 52,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 225
+  },
+  {
+   "day": "2026-09-06",
+   "near": 364283.41,
+   "usd": 852583.92,
+   "trades": 3548,
+   "tokens": 65,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 259
+  },
+  {
+   "day": "2026-09-07",
+   "near": 116835.8,
+   "usd": 276625.36,
+   "trades": 2144,
+   "tokens": 54,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 224
+  },
+  {
+   "day": "2026-09-08",
+   "near": 159106.53,
+   "usd": 373493.27,
+   "trades": 1764,
+   "tokens": 50,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 179
+  },
+  {
+   "day": "2026-09-09",
+   "near": 351270.1,
+   "usd": 880386.78,
+   "trades": 3210,
+   "tokens": 54,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 237
+  },
+  {
+   "day": "2026-09-10",
+   "near": 411526.7,
+   "usd": 1012702.95,
+   "trades": 3072,
+   "tokens": 49,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 219
+  },
+  {
+   "day": "2026-09-11",
+   "near": 627243.28,
+   "usd": 1586253.86,
+   "trades": 4788,
+   "tokens": 56,
+   "launch_near": 0.13,
+   "launch_tokens": 1,
+   "traders": 250
+  },
+  {
+   "day": "2026-09-12",
+   "near": 228476.36,
+   "usd": 541348.44,
+   "trades": 1917,
+   "tokens": 44,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 200
+  },
+  {
+   "day": "2026-09-13",
+   "near": 192644.34,
+   "usd": 448252.4,
+   "trades": 1494,
+   "tokens": 49,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 181
+  },
+  {
+   "day": "2026-09-14",
+   "near": 285428.86,
+   "usd": 695136.06,
+   "trades": 2473,
+   "tokens": 63,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 195
+  },
+  {
+   "day": "2026-09-15",
+   "near": 187736.48,
+   "usd": 446748.3,
+   "trades": 1912,
+   "tokens": 58,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 221
+  },
+  {
+   "day": "2026-09-16",
+   "near": 130138.27,
+   "usd": 323574.38,
+   "trades": 2693,
+   "tokens": 56,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 225
+  },
+  {
+   "day": "2026-09-17",
+   "near": 227829.36,
+   "usd": 665170.63,
+   "trades": 3472,
+   "tokens": 72,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 316
+  },
+  {
+   "day": "2026-09-18",
+   "near": 688621.66,
+   "usd": 2445748.3,
+   "trades": 8853,
+   "tokens": 100,
+   "launch_near": 0.53,
+   "launch_tokens": 1,
+   "traders": 750
+  },
+  {
+   "day": "2026-09-19",
+   "near": 199272.51,
+   "usd": 730612.83,
+   "trades": 3558,
+   "tokens": 77,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 527
+  },
+  {
+   "day": "2026-09-20",
+   "near": 412118.95,
+   "usd": 1615292.22,
+   "trades": 4454,
+   "tokens": 77,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 588
+  },
+  {
+   "day": "2026-09-21",
+   "near": 434558.08,
+   "usd": 1813612.6,
+   "trades": 8166,
+   "tokens": 84,
+   "launch_near": 0.0,
+   "launch_tokens": 0,
+   "traders": 638
+  },
+  {
+   "day": "2026-09-22",
+   "near": 599048.17,
+   "usd": 2647835.62,
+   "trades": 13700,
+   "tokens": 108,
+   "launch_near": 10527.38,
+   "launch_tokens": 9,
+   "traders": 920
+  },
+  {
+   "day": "2026-09-23",
+   "near": 700515.74,
+   "usd": 3146068.66,
+   "trades": 14681,
+   "tokens": 180,
+   "launch_near": 58414.63,
+   "launch_tokens": 33,
+   "traders": 1410
+  },
+  {
+   "day": "2026-09-24",
+   "near": 257069.63,
+   "usd": 1165642.18,
+   "trades": 9150,
+   "tokens": 168,
+   "launch_near": 22557.65,
+   "launch_tokens": 30,
+   "traders": 1050
+  },
+  {
+   "day": "2026-09-25",
+   "near": 350240.34,
+   "usd": 1726155.31,
+   "trades": 10015,
+   "tokens": 192,
+   "launch_near": 71486.17,
+   "launch_tokens": 44,
+   "traders": 1586
+  },
+  {
+   "day": "2026-09-26",
+   "near": 266228.08,
+   "usd": 1298531.66,
+   "trades": 8006,
+   "tokens": 183,
+   "launch_near": 86666.38,
+   "launch_tokens": 41,
+   "traders": 1662
+  },
+  {
+   "day": "2026-09-27",
+   "near": 2640633.76,
+   "usd": 13993206.47,
+   "trades": 59651,
+   "tokens": 741,
+   "launch_near": 1400888.76,
+   "launch_tokens": 530,
+   "traders": 6526
+  },
+  {
+   "day": "2026-09-28",
+   "near": 1725982.74,
+   "usd": 8684685.65,
+   "trades": 51628,
+   "tokens": 1073,
+   "launch_near": 929605.91,
+   "launch_tokens": 756,
+   "traders": 6759
+  },
+  {
+   "day": "2026-09-29",
+   "near": 1133724.89,
+   "usd": 5459181.75,
+   "trades": 32099,
+   "tokens": 760,
+   "launch_near": 563193.3,
+   "launch_tokens": 484,
+   "traders": 5000
+  },
+  {
+   "day": "2026-09-30",
+   "near": 880628.01,
+   "usd": 4623688.62,
+   "trades": 28985,
+   "tokens": 921,
+   "launch_near": 532329.55,
+   "launch_tokens": 658,
+   "traders": 4328
+  },
+  {
+   "day": "2026-10-01",
+   "near": 918988.77,
+   "usd": 4684157.81,
+   "trades": 24263,
+   "tokens": 746,
+   "launch_near": 336984.97,
+   "launch_tokens": 577,
+   "traders": 3630
+  },
+  {
+   "day": "2026-10-02",
+   "near": 483898.02,
+   "usd": 2334123.53,
+   "trades": 18976,
+   "tokens": 608,
+   "launch_near": 282906.2,
+   "launch_tokens": 420,
+   "traders": 3014
+  },
+  {
+   "day": "2026-10-03",
+   "near": 391016.71,
+   "usd": 1839660.66,
+   "trades": 16569,
+   "tokens": 393,
+   "launch_near": 125664.67,
+   "launch_tokens": 229,
+   "traders": 2573
+  },
+  {
+   "day": "2026-10-04",
+   "near": 783803.94,
+   "usd": 3812113.87,
+   "trades": 21445,
+   "tokens": 367,
+   "launch_near": 227931.6,
+   "launch_tokens": 209,
+   "traders": 2330
+  },
+  {
+   "day": "2026-10-05",
+   "near": 265778.36,
+   "usd": 1342788.66,
+   "trades": 11805,
+   "tokens": 400,
+   "launch_near": 123135.49,
+   "launch_tokens": 233,
+   "traders": 1886
+  },
+  {
+   "day": "2026-10-06",
+   "near": 280820.07,
+   "usd": 1448124.63,
+   "trades": 10399,
+   "tokens": 368,
+   "launch_near": 151363.44,
+   "launch_tokens": 216,
+   "traders": 1832
+  },
+  {
+   "day": "2026-10-07",
+   "near": 184501.39,
+   "usd": 951573.74,
+   "trades": 7748,
+   "tokens": 313,
+   "launch_near": 95945.59,
+   "launch_tokens": 179,
+   "traders": 1565
+  },
+  {
+   "day": "2026-10-08",
+   "near": 459220.0,
+   "usd": 2294071.49,
+   "trades": 16799,
+   "tokens": 402,
+   "launch_near": 225734.41,
+   "launch_tokens": 246,
+   "traders": 2335
+  },
+  {
+   "day": "2026-10-09",
+   "near": 340913.66,
+   "usd": 1619798.13,
+   "trades": 11213,
+   "tokens": 349,
+   "launch_near": 161347.56,
+   "launch_tokens": 229,
+   "traders": 1801
+  },
+  {
+   "day": "2026-10-10",
+   "near": 203444.89,
+   "usd": 1069458.61,
+   "trades": 8423,
+   "tokens": 287,
+   "launch_near": 92449.78,
+   "launch_tokens": 177,
+   "traders": 1517
+  },
+  {
+   "day": "2026-10-11",
+   "near": 144850.18,
+   "usd": 806222.65,
+   "trades": 6417,
+   "tokens": 301,
+   "launch_near": 59130.5,
+   "launch_tokens": 178,
+   "traders": 1252
+  },
+  {
+   "day": "2026-10-12",
+   "near": 163365.9,
+   "usd": 917963.33,
+   "trades": 8513,
+   "tokens": 319,
+   "launch_near": 60477.86,
+   "launch_tokens": 195,
+   "traders": 3447
+  },
+  {
+   "day": "2026-10-13",
+   "near": 404527.47,
+   "usd": 2050355.47,
+   "trades": 10227,
+   "tokens": 300,
+   "launch_near": 304219.98,
+   "launch_tokens": 175,
+   "traders": 2812
+  },
+  {
+   "day": "2026-10-14",
+   "near": 1119097.83,
+   "usd": 5630361.73,
+   "trades": 17570,
+   "tokens": 364,
+   "launch_near": 907311.49,
+   "launch_tokens": 233,
+   "traders": 4400
+  },
+  {
+   "day": "2026-10-15",
+   "near": 394952.13,
+   "usd": 1968893.78,
+   "trades": 10598,
+   "tokens": 307,
+   "launch_near": 262445.29,
+   "launch_tokens": 193,
+   "traders": 2192
+  },
+  {
+   "day": "2026-10-16",
+   "near": 370508.71,
+   "usd": 1918125.8,
+   "trades": 14204,
+   "tokens": 337,
+   "launch_near": 265346.5,
+   "launch_tokens": 223,
+   "traders": 2832
+  },
+  {
+   "day": "2026-10-17",
+   "near": 196112.86,
+   "usd": 978875.57,
+   "trades": 10259,
+   "tokens": 294,
+   "launch_near": 111566.42,
+   "launch_tokens": 187,
+   "traders": 3223
+  },
+  {
+   "day": "2026-10-18",
+   "near": 237762.76,
+   "usd": 1155149.73,
+   "trades": 10882,
+   "tokens": 293,
+   "launch_near": 184859.64,
+   "launch_tokens": 190,
+   "traders": 2490
+  },
+  {
+   "day": "2026-10-19",
+   "near": 159459.0,
+   "usd": 794480.37,
+   "trades": 8065,
+   "tokens": 309,
+   "launch_near": 120721.41,
+   "launch_tokens": 202,
+   "traders": 1885
+  },
+  {
+   "day": "2026-10-20",
+   "near": 159743.74,
+   "usd": 770216.08,
+   "trades": 7238,
+   "tokens": 299,
+   "launch_near": 109808.47,
+   "launch_tokens": 192,
+   "traders": 1822
+  },
+  {
+   "day": "2026-10-21",
+   "near": 168762.63,
+   "usd": 883877.82,
+   "trades": 9379,
+   "tokens": 303,
+   "launch_near": 121327.26,
+   "launch_tokens": 198,
+   "traders": 2574
+  },
+  {
+   "day": "2026-10-22",
+   "near": 160007.89,
+   "usd": 799555.11,
+   "trades": 7799,
+   "tokens": 297,
+   "launch_near": 111569.86,
+   "launch_tokens": 195,
+   "traders": 1628
+  },
+  {
+   "day": "2026-10-23",
+   "near": 223104.58,
+   "usd": 1086625.03,
+   "trades": 10875,
+   "tokens": 296,
+   "launch_near": 118248.09,
+   "launch_tokens": 198,
+   "traders": 1459
+  },
+  {
+   "day": "2026-10-24",
+   "near": 137358.09,
+   "usd": 614629.1,
+   "trades": 5590,
+   "tokens": 239,
+   "launch_near": 58398.52,
+   "launch_tokens": 143,
+   "traders": 1295
+  },
+  {
+   "day": "2026-10-25",
+   "near": 70835.97,
+   "usd": 319202.0,
+   "trades": 4651,
+   "tokens": 226,
+   "launch_near": 45204.11,
+   "launch_tokens": 144,
+   "traders": 819
+  },
+  {
+   "day": "2026-10-26",
+   "near": 121100.48,
+   "usd": 548273.98,
+   "trades": 6186,
+   "tokens": 238,
+   "launch_near": 55813.28,
+   "launch_tokens": 158,
+   "traders": 1009
+  },
+  {
+   "day": "2026-10-27",
+   "near": 86015.31,
+   "usd": 389686.3,
+   "trades": 4329,
+   "tokens": 225,
+   "launch_near": 38125.77,
+   "launch_tokens": 143,
+   "traders": 827
+  },
+  {
+   "day": "2026-10-28",
+   "near": 81771.41,
+   "usd": 382482.5,
+   "trades": 3807,
+   "tokens": 199,
+   "launch_near": 50600.52,
+   "launch_tokens": 127,
+   "traders": 845
+  },
+  {
+   "day": "2026-10-29",
+   "near": 133487.89,
+   "usd": 587182.13,
+   "trades": 4998,
+   "tokens": 244,
+   "launch_near": 74648.98,
+   "launch_tokens": 161,
+   "traders": 908
+  },
+  {
+   "day": "2026-10-30",
+   "near": 146122.91,
+   "usd": 611986.93,
+   "trades": 3716,
+   "tokens": 186,
+   "launch_near": 91470.94,
+   "launch_tokens": 104,
+   "traders": 683
+  },
+  {
+   "day": "2026-10-31",
+   "near": 55088.96,
+   "usd": 242995.93,
+   "trades": 2759,
+   "tokens": 181,
+   "launch_near": 21543.05,
+   "launch_tokens": 94,
+   "traders": 510
+  },
+  {
+   "day": "2026-11-01",
+   "near": 35617.76,
+   "usd": 155118.93,
+   "trades": 3196,
+   "tokens": 150,
+   "launch_near": 8540.58,
+   "launch_tokens": 67,
+   "traders": 473
+  },
+  {
+   "day": "2026-11-02",
+   "near": 97019.15,
+   "usd": 391304.55,
+   "trades": 3357,
+   "tokens": 196,
+   "launch_near": 44395.75,
+   "launch_tokens": 117,
+   "traders": 706
+  },
+  {
+   "day": "2026-11-03",
+   "near": 88023.23,
+   "usd": 337395.93,
+   "trades": 3592,
+   "tokens": 159,
+   "launch_near": 45431.61,
+   "launch_tokens": 83,
+   "traders": 716
+  },
+  {
+   "day": "2026-11-04",
+   "near": 132234.04,
+   "usd": 530169.25,
+   "trades": 3921,
+   "tokens": 140,
+   "launch_near": 41000.89,
+   "launch_tokens": 76,
+   "traders": 668
+  },
+  {
+   "day": "2026-11-05",
+   "near": 319436.32,
+   "usd": 1191881.29,
+   "trades": 5170,
+   "tokens": 183,
+   "launch_near": 274277.94,
+   "launch_tokens": 100,
+   "traders": 891
+  },
+  {
+   "day": "2026-11-06",
+   "near": 375112.97,
+   "usd": 1395631.48,
+   "trades": 7993,
+   "tokens": 209,
+   "launch_near": 183226.38,
+   "launch_tokens": 120,
+   "traders": 909
+  },
+  {
+   "day": "2026-11-07",
+   "near": 152544.97,
+   "usd": 562997.05,
+   "trades": 3085,
+   "tokens": 143,
+   "launch_near": 33209.85,
+   "launch_tokens": 70,
+   "traders": 503
+  },
+  {
+   "day": "2026-11-08",
+   "near": 63526.78,
+   "usd": 231840.81,
+   "trades": 2283,
+   "tokens": 128,
+   "launch_near": 25117.71,
+   "launch_tokens": 61,
+   "traders": 485
+  },
+  {
+   "day": "2026-11-09",
+   "near": 185470.05,
+   "usd": 667086.32,
+   "trades": 11473,
+   "tokens": 182,
+   "launch_near": 44926.22,
+   "launch_tokens": 91,
+   "traders": 589
+  },
+  {
+   "day": "2026-11-10",
+   "near": 294140.1,
+   "usd": 1056955.11,
+   "trades": 28563,
+   "tokens": 226,
+   "launch_near": 63888.14,
+   "launch_tokens": 123,
+   "traders": 666
+  },
+  {
+   "day": "2026-11-11",
+   "near": 326607.23,
+   "usd": 1202042.89,
+   "trades": 39905,
+   "tokens": 194,
+   "launch_near": 32852.89,
+   "launch_tokens": 92,
+   "traders": 604
+  },
+  {
+   "day": "2026-11-12",
+   "near": 76605.21,
+   "usd": 272486.59,
+   "trades": 7843,
+   "tokens": 216,
+   "launch_near": 6045.62,
+   "launch_tokens": 151,
+   "traders": 225
+  }
+ ],
+ "concentration": {
+  "days": 30,
+  "tokens": 1994,
+  "near": 6167630.9,
+  "launchpad_share": 0.5759,
+  "launchpad_tokens": 1619,
+  "top1_share": 0.211,
+  "top5_share": 0.5054,
+  "top10_share": 0.6455,
+  "top10": [
+   {
+    "token": "batman-4.nearlytrade.near",
+    "near": 1301176.0,
+    "share": 0.211
+   },
+   {
+    "token": "nearly-993927.nearlytrade.near",
+    "near": 596035.2,
+    "share": 0.0966
+   },
+   {
+    "token": "token.rhealab.near",
+    "near": 473344.8,
+    "share": 0.0767
+   },
+   {
+    "token": "zec.omft.near",
+    "near": 459659.4,
+    "share": 0.0745
+   },
+   {
+    "token": "imeme-2.v2-launchpad.justhoot.near",
+    "near": 286669.7,
+    "share": 0.0465
+   },
+   {
+    "token": "hoot-8ecf65.launchpad.justhoot.near",
+    "near": 226103.5,
+    "share": 0.0367
+   },
+   {
+    "token": "qtc.omft.near",
+    "near": 193419.2,
+    "share": 0.0314
+   },
+   {
+    "token": "three-de86d6.launchpad.justhoot.near",
+    "near": 152067.1,
+    "share": 0.0247
+   },
+   {
+    "token": "meta-pool.near",
+    "near": 148077.1,
+    "share": 0.024
+   },
+   {
+    "token": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
+    "near": 144892.9,
+    "share": 0.0235
+   }
+  ]
+ },
+ "launches": {
+  "from": "2026-10-03",
+  "to": "2026-11-12",
+  "total": 1858,
+  "by_pad": {
+   "justhoot": 577,
+   "nearly": 1281
+  },
+  "per_day": [
+   {
+    "day": "2026-10-03",
+    "nearly": 31,
+    "justhoot": 14
+   },
+   {
+    "day": "2026-10-04",
+    "nearly": 64,
+    "justhoot": 27
+   },
+   {
+    "day": "2026-10-05",
+    "nearly": 55,
+    "justhoot": 13
+   },
+   {
+    "day": "2026-10-06",
+    "nearly": 48,
+    "justhoot": 10
+   },
+   {
+    "day": "2026-10-07",
+    "nearly": 41,
+    "justhoot": 9
+   },
+   {
+    "day": "2026-10-08",
+    "nearly": 64,
+    "justhoot": 14
+   },
+   {
+    "day": "2026-10-09",
+    "nearly": 46,
+    "justhoot": 10
+   },
+   {
+    "day": "2026-10-10",
+    "nearly": 35,
+    "justhoot": 5
+   },
+   {
+    "day": "2026-10-11",
+    "nearly": 27,
+    "justhoot": 7
+   },
+   {
+    "day": "2026-10-12",
+    "nearly": 29,
+    "justhoot": 2
+   },
+   {
+    "day": "2026-10-13",
+    "nearly": 65,
+    "justhoot": 3
+   },
+   {
+    "day": "2026-10-14",
+    "nearly": 48,
+    "justhoot": 3
+   },
+   {
+    "day": "2026-10-15",
+    "nearly": 63,
+    "justhoot": 10
+   },
+   {
+    "day": "2026-10-16",
+    "nearly": 55,
+    "justhoot": 21
+   },
+   {
+    "day": "2026-10-17",
+    "nearly": 60,
+    "justhoot": 11
+   },
+   {
+    "day": "2026-10-18",
+    "nearly": 33,
+    "justhoot": 41
+   },
+   {
+    "day": "2026-10-19",
+    "justhoot": 44,
+    "nearly": 28
+   },
+   {
+    "day": "2026-10-20",
+    "nearly": 22,
+    "justhoot": 20
+   },
+   {
+    "day": "2026-10-21",
+    "justhoot": 21,
+    "nearly": 45
+   },
+   {
+    "day": "2026-10-22",
+    "nearly": 30,
+    "justhoot": 41
+   },
+   {
+    "day": "2026-10-23",
+    "nearly": 52,
+    "justhoot": 36
+   },
+   {
+    "day": "2026-10-24",
+    "nearly": 13,
+    "justhoot": 13
+   },
+   {
+    "day": "2026-10-25",
+    "nearly": 30,
+    "justhoot": 27
+   },
+   {
+    "day": "2026-10-26",
+    "justhoot": 24,
+    "nearly": 53
+   },
+   {
+    "day": "2026-10-27",
+    "justhoot": 19,
+    "nearly": 24
+   },
+   {
+    "day": "2026-10-28",
+    "justhoot": 10,
+    "nearly": 33
+   },
+   {
+    "day": "2026-10-29",
+    "nearly": 27,
+    "justhoot": 17
+   },
+   {
+    "day": "2026-10-30",
+    "nearly": 10,
+    "justhoot": 1
+   },
+   {
+    "day": "2026-10-31",
+    "justhoot": 10,
+    "nearly": 8
+   },
+   {
+    "day": "2026-11-01",
+    "justhoot": 6,
+    "nearly": 3
+   },
+   {
+    "day": "2026-11-02",
+    "justhoot": 23,
+    "nearly": 6
+   },
+   {
+    "day": "2026-11-03",
+    "nearly": 12,
+    "justhoot": 8
+   },
+   {
+    "day": "2026-11-04",
+    "nearly": 9,
+    "justhoot": 3
+   },
+   {
+    "day": "2026-11-05",
+    "nearly": 10,
+    "justhoot": 10
+   },
+   {
+    "day": "2026-11-06",
+    "justhoot": 10,
+    "nearly": 13
+   },
+   {
+    "day": "2026-11-07",
+    "justhoot": 4,
+    "nearly": 2
+   },
+   {
+    "day": "2026-11-08",
+    "nearly": 6
+   },
+   {
+    "day": "2026-11-09",
+    "nearly": 12,
+    "justhoot": 20
+   },
+   {
+    "day": "2026-11-10",
+    "justhoot": 8,
+    "nearly": 37
+   },
+   {
+    "day": "2026-11-11",
+    "nearly": 24,
+    "justhoot": 1
+   },
+   {
+    "day": "2026-11-12",
+    "nearly": 8,
+    "justhoot": 1
+   }
+  ],
+  "traded": 1824,
+  "traded_share": 0.9817,
+  "volume_near": {
+   "median": 60.21,
+   "p90": 715.8,
+   "total": 3290562.53,
+   "under_10_share": 0.1727,
+   "over_1000_share": 0.0779
+  },
+  "x_max": {
+   "median": 1.036,
+   "ge2_share": 0.0647,
+   "ge5_share": 0.017,
+   "ge10_share": 0.0088
+  },
+  "x_now": {
+   "median": 0.979,
+   "below_start_share": 0.8904,
+   "below_half_share": 0.0027,
+   "above_2x_share": 0.0093
+  },
+  "peak_cap_usd": {
+   "n": 1824,
+   "near_usd": 3.49,
+   "median": 3919.0,
+   "ge_10k_share": 0.0439,
+   "ge_100k_share": 0.0038
+  },
+  "alive": {
+   "older_than_7d": 1673,
+   "traded_in_last_3d": 105,
+   "share": 0.0628
+  },
+  "creators": {
+   "unique": 1101,
+   "one_launch_share": 0.7103,
+   "ge5_launches": 56,
+   "top10_launch_share": 0.0888,
+   "max_by_one": 50
+  },
+  "live": {
+   "n": 74,
+   "fee_farm": 20,
+   "fee_farm_share": 0.2703,
+   "no_dev_buy": 42,
+   "no_dev_buy_share": 0.5676
+  }
+ },
+ "creators": {
+  "launches": 1858,
+  "judged": 1837,
+  "dumped": 323,
+  "dumped_share": 0.1758,
+  "by_pad": {
+   "nearly": {
+    "n": 1264,
+    "dumped_share": 0.2136
+   },
+   "justhoot": {
+    "n": 573,
+    "dumped_share": 0.0925
+   }
+  },
+  "by_week": [
+   {
+    "week": "2026-09-28",
+    "n": 132,
+    "dumped_share": 0.0682
+   },
+   {
+    "week": "2026-10-05",
+    "n": 385,
+    "dumped_share": 0.0961
+   },
+   {
+    "week": "2026-10-12",
+    "n": 446,
+    "dumped_share": 0.2063
+   },
+   {
+    "week": "2026-10-19",
+    "n": 419,
+    "dumped_share": 0.2196
+   },
+   {
+    "week": "2026-10-26",
+    "n": 238,
+    "dumped_share": 0.2731
+   },
+   {
+    "week": "2026-11-02",
+    "n": 112,
+    "dumped_share": 0.1964
+   },
+   {
+    "week": "2026-11-09",
+    "n": 105,
+    "dumped_share": 0.0571
+   }
+  ],
+  "creator_held_tokens": 1213,
+  "creator_held_share": 0.6603,
+  "dumped_share_of_holders": 0.2663,
+  "sold_any_share_of_holders": 0.7181,
+  "first_sell_s": {
+   "median": 425.0,
+   "within_60s_share": 0.137
+  },
+  "repeat_creators": {
+   "ge3_launches": 129,
+   "dump_half_or_more": 18,
+   "share": 0.1395
+  }
+ },
+ "wallets": {
+  "from": "2026-09-29",
+  "to": "2026-11-12",
+  "wallets": 10421,
+  "invested_near": 5091147.0,
+  "profitable": 3112,
+  "profitable_share": 0.2986,
+  "median_pnl_near": -0.827,
+  "winners_total_near": 560243.0,
+  "losers_total_near": -607586.0,
+  "net_near": -47343.0,
+  "top1pct_share_of_profit": 0.6811,
+  "active_ge5_tokens": {
+   "wallets": 1558,
+   "profitable_share": 0.3928
+  },
+  "histogram": [
+   {
+    "from": -1e+18,
+    "to": -100,
+    "wallets": 815
+   },
+   {
+    "from": -100,
+    "to": -10,
+    "wallets": 1916
+   },
+   {
+    "from": -10,
+    "to": -1,
+    "wallets": 2261
+   },
+   {
+    "from": -1,
+    "to": 0,
+    "wallets": 2303
+   },
+   {
+    "from": 0,
+    "to": 1,
+    "wallets": 821
+   },
+   {
+    "from": 1,
+    "to": 10,
+    "wallets": 907
+   },
+   {
+    "from": 10,
+    "to": 100,
+    "wallets": 877
+   },
+   {
+    "from": 100,
+    "to": 1e+18,
+    "wallets": 521
+   }
+  ]
+ },
+ "network": {
+  "near_usd": 3.49,
+  "days": [
+   {
+    "day": "2026-11-09",
+    "full": false,
+    "blocks": 62661,
+    "txs": 409876,
+    "receipts": 2027253,
+    "signers": 37498,
+    "new_accounts": 2997,
+    "burnt_near": 418.79,
+    "fee_per_tx_usd": 0.003566,
+    "tps": 4.74
+   },
+   {
+    "day": "2026-11-10",
+    "full": true,
+    "blocks": 149795,
+    "txs": 968382,
+    "receipts": 4400855,
+    "signers": 180215,
+    "new_accounts": 2625,
+    "burnt_near": 956.8,
+    "fee_per_tx_usd": 0.003448,
+    "tps": 11.21
+   },
+   {
+    "day": "2026-11-11",
+    "full": true,
+    "blocks": 147135,
+    "txs": 891297,
+    "receipts": 4399047,
+    "signers": 78479,
+    "new_accounts": 2729,
+    "burnt_near": 892.04,
+    "fee_per_tx_usd": 0.003493,
+    "tps": 10.32
+   },
+   {
+    "day": "2026-11-12",
+    "full": false,
+    "blocks": 61622,
+    "txs": 293306,
+    "receipts": 1437687,
+    "signers": 40909,
+    "new_accounts": 2217,
+    "burnt_near": 297.2,
+    "fee_per_tx_usd": 0.003536,
+    "tps": 3.39
+   }
+  ]
+ },
+ "holders": {
+  "tokens": 1858,
+  "median": 3.0,
+  "p90": 6.0,
+  "le_10_share": 0.9537,
+  "ge_50_share": 0.0145,
+  "ge_100_share": 0.0081,
+  "max": 112
+ },
+ "moves": {
+  "from": "2026-11-09 13:48",
+  "to": "2026-11-12 09:42",
+  "hours": 67.9,
+  "transfers": 13781,
+  "usd": 564117757,
+  "usd_per_day": 199412533,
+  "by_token": [
+   {
+    "token": "near",
+    "symbol": "NEAR",
+    "usd": 363480537,
+    "share": 0.6443
+   },
+   {
+    "token": "nbtc.bridge.near",
+    "symbol": "NBTC",
+    "usd": 110631881,
+    "share": 0.1961
+   },
+   {
+    "token": "zec.omft.near",
+    "symbol": "ZEC",
+    "usd": 52111617,
+    "share": 0.0924
+   },
+   {
+    "token": "usdt.tether-token.near",
+    "symbol": "USDt",
+    "usd": 12718634,
+    "share": 0.0225
+   },
+   {
+    "token": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+    "symbol": "USDC",
+    "usd": 11209680,
+    "share": 0.0199
+   },
+   {
+    "token": "sinu-8.smithii.near",
+    "symbol": "SINU",
+    "usd": 7992340,
+    "share": 0.0142
+   }
+  ],
+  "by_route": {
+   "with a hub or exchange": 0.3951,
+   "wallet to wallet": 0.3873,
+   "with a bridge": 0.2176
+  }
+ },
+ "launch_speed": {
+  "launches": 67,
+  "to_first_trade_s": {
+   "median": 3.7,
+   "p90": 10.9
+  },
+  "to_ready_s": {
+   "median": 6.5
+  }
+ },
+ "near_price": [
+  {
+   "day": "2026-07-10",
+   "usd": 1.8862
+  },
+  {
+   "day": "2026-07-11",
+   "usd": 1.8989
+  },
+  {
+   "day": "2026-07-12",
+   "usd": 1.8901
+  },
+  {
+   "day": "2026-07-13",
+   "usd": 1.9062
+  },
+  {
+   "day": "2026-07-14",
+   "usd": 1.997
+  },
+  {
+   "day": "2026-07-15",
+   "usd": 2.0439
+  },
+  {
+   "day": "2026-07-16",
+   "usd": 2.0432
+  },
+  {
+   "day": "2026-07-17",
+   "usd": 1.9361
+  },
+  {
+   "day": "2026-07-18",
+   "usd": 1.9205
+  },
+  {
+   "day": "2026-07-19",
+   "usd": 1.921
+  },
+  {
+   "day": "2026-07-20",
+   "usd": 1.9462
+  },
+  {
+   "day": "2026-07-21",
+   "usd": 1.9802
+  },
+  {
+   "day": "2026-07-22",
+   "usd": 1.8917
+  },
+  {
+   "day": "2026-07-23",
+   "usd": 1.8762
+  },
+  {
+   "day": "2026-07-24",
+   "usd": 1.8584
+  },
+  {
+   "day": "2026-07-25",
+   "usd": 1.7954
+  },
+  {
+   "day": "2026-07-26",
+   "usd": 1.7962
+  },
+  {
+   "day": "2026-07-27",
+   "usd": 1.8026
+  },
+  {
+   "day": "2026-07-28",
+   "usd": 1.6615
+  },
+  {
+   "day": "2026-07-29",
+   "usd": 1.64
+  },
+  {
+   "day": "2026-07-30",
+   "usd": 1.6527
+  },
+  {
+   "day": "2026-07-31",
+   "usd": 1.6633
+  },
+  {
+   "day": "2026-08-01",
+   "usd": 1.6654
+  },
+  {
+   "day": "2026-08-02",
+   "usd": 1.7059
+  },
+  {
+   "day": "2026-08-03",
+   "usd": 1.7227
+  },
+  {
+   "day": "2026-08-04",
+   "usd": 1.7409
+  },
+  {
+   "day": "2026-08-05",
+   "usd": 1.7082
+  },
+  {
+   "day": "2026-08-06",
+   "usd": 1.6888
+  },
+  {
+   "day": "2026-08-07",
+   "usd": 1.6291
+  },
+  {
+   "day": "2026-08-08",
+   "usd": 1.6097
+  },
+  {
+   "day": "2026-08-09",
+   "usd": 1.6222
+  },
+  {
+   "day": "2026-08-10",
+   "usd": 1.6281
+  },
+  {
+   "day": "2026-08-11",
+   "usd": 1.5883
+  },
+  {
+   "day": "2026-08-12",
+   "usd": 1.6435
+  },
+  {
+   "day": "2026-08-13",
+   "usd": 1.6495
+  },
+  {
+   "day": "2026-08-14",
+   "usd": 1.6073
+  },
+  {
+   "day": "2026-08-15",
+   "usd": 1.6385
+  },
+  {
+   "day": "2026-08-16",
+   "usd": 1.6123
+  },
+  {
+   "day": "2026-08-17",
+   "usd": 1.6289
+  },
+  {
+   "day": "2026-08-18",
+   "usd": 1.6216
+  },
+  {
+   "day": "2026-08-19",
+   "usd": 1.6412
+  },
+  {
+   "day": "2026-08-20",
+   "usd": 1.7398
+  },
+  {
+   "day": "2026-08-21",
+   "usd": 1.873
+  },
+  {
+   "day": "2026-08-22",
+   "usd": 1.947
+  },
+  {
+   "day": "2026-08-23",
+   "usd": 1.9248
+  },
+  {
+   "day": "2026-08-24",
+   "usd": 1.9839
+  },
+  {
+   "day": "2026-08-25",
+   "usd": 1.9256
+  },
+  {
+   "day": "2026-08-26",
+   "usd": 1.8531
+  },
+  {
+   "day": "2026-08-27",
+   "usd": 1.8978
+  },
+  {
+   "day": "2026-08-28",
+   "usd": 1.8605
+  },
+  {
+   "day": "2026-08-29",
+   "usd": 1.8234
+  },
+  {
+   "day": "2026-08-30",
+   "usd": 1.8789
+  },
+  {
+   "day": "2026-08-31",
+   "usd": 1.8566
+  },
+  {
+   "day": "2026-09-01",
+   "usd": 1.9461
+  },
+  {
+   "day": "2026-09-02",
+   "usd": 1.8594
+  },
+  {
+   "day": "2026-09-03",
+   "usd": 1.9236
+  },
+  {
+   "day": "2026-09-04",
+   "usd": 1.9972
+  },
+  {
+   "day": "2026-09-05",
+   "usd": 2.2167
+  },
+  {
+   "day": "2026-09-06",
+   "usd": 2.3378
+  },
+  {
+   "day": "2026-09-07",
+   "usd": 2.3551
+  },
+  {
+   "day": "2026-09-08",
+   "usd": 2.3202
+  },
+  {
+   "day": "2026-09-09",
+   "usd": 2.4698
+  },
+  {
+   "day": "2026-09-10",
+   "usd": 2.4638
+  },
+  {
+   "day": "2026-09-11",
+   "usd": 2.4976
+  },
+  {
+   "day": "2026-09-12",
+   "usd": 2.3669
+  },
+  {
+   "day": "2026-09-13",
+   "usd": 2.327
+  },
+  {
+   "day": "2026-09-14",
+   "usd": 2.4322
+  },
+  {
+   "day": "2026-09-15",
+   "usd": 2.3855
+  },
+  {
+   "day": "2026-09-16",
+   "usd": 2.4348
+  },
+  {
+   "day": "2026-09-17",
+   "usd": 2.8361
+  },
+  {
+   "day": "2026-09-18",
+   "usd": 3.546
+  },
+  {
+   "day": "2026-09-19",
+   "usd": 3.656
+  },
+  {
+   "day": "2026-09-20",
+   "usd": 3.5602
+  },
+  {
+   "day": "2026-09-21",
+   "usd": 3.9528
+  },
+  {
+   "day": "2026-09-22",
+   "usd": 4.4037
+  },
+  {
+   "day": "2026-09-23",
+   "usd": 4.4485
+  },
+  {
+   "day": "2026-09-24",
+   "usd": 4.4499
+  },
+  {
+   "day": "2026-09-25",
+   "usd": 4.838
+  },
+  {
+   "day": "2026-09-26",
+   "usd": 4.8825
+  },
+  {
+   "day": "2026-09-27",
+   "usd": 5.2607
+  },
+  {
+   "day": "2026-09-28",
+   "usd": 5.0622
+  },
+  {
+   "day": "2026-09-29",
+   "usd": 4.8341
+  },
+  {
+   "day": "2026-09-30",
+   "usd": 5.1789
+  },
+  {
+   "day": "2026-10-01",
+   "usd": 5.0928
+  },
+  {
+   "day": "2026-10-02",
+   "usd": 4.844
+  },
+  {
+   "day": "2026-10-03",
+   "usd": 4.6956
+  },
+  {
+   "day": "2026-10-04",
+   "usd": 4.8718
+  },
+  {
+   "day": "2026-10-05",
+   "usd": 5.0394
+  },
+  {
+   "day": "2026-10-06",
+   "usd": 5.1709
+  },
+  {
+   "day": "2026-10-07",
+   "usd": 5.1248
+  },
+  {
+   "day": "2026-10-08",
+   "usd": 5.0145
+  },
+  {
+   "day": "2026-10-09",
+   "usd": 4.7577
+  },
+  {
+   "day": "2026-10-10",
+   "usd": 5.2288
+  },
+  {
+   "day": "2026-10-11",
+   "usd": 5.4353
+  },
+  {
+   "day": "2026-10-12",
+   "usd": 5.6409
+  },
+  {
+   "day": "2026-10-13",
+   "usd": 5.1153
+  },
+  {
+   "day": "2026-10-14",
+   "usd": 4.978
+  },
+  {
+   "day": "2026-10-15",
+   "usd": 4.8979
+  },
+  {
+   "day": "2026-10-16",
+   "usd": 5.175
+  },
+  {
+   "day": "2026-10-17",
+   "usd": 5.0211
+  },
+  {
+   "day": "2026-10-18",
+   "usd": 4.8731
+  },
+  {
+   "day": "2026-10-19",
+   "usd": 4.9887
+  },
+  {
+   "day": "2026-10-20",
+   "usd": 4.8289
+  },
+  {
+   "day": "2026-10-21",
+   "usd": 5.1862
+  },
+  {
+   "day": "2026-10-22",
+   "usd": 4.9995
+  },
+  {
+   "day": "2026-10-23",
+   "usd": 4.8783
+  },
+  {
+   "day": "2026-10-24",
+   "usd": 4.5131
+  },
+  {
+   "day": "2026-10-25",
+   "usd": 4.4947
+  },
+  {
+   "day": "2026-10-26",
+   "usd": 4.5104
+  },
+  {
+   "day": "2026-10-27",
+   "usd": 4.5258
+  },
+  {
+   "day": "2026-10-28",
+   "usd": 4.6743
+  },
+  {
+   "day": "2026-10-29",
+   "usd": 4.4156
+  },
+  {
+   "day": "2026-10-30",
+   "usd": 4.25
+  },
+  {
+   "day": "2026-10-31",
+   "usd": 4.3873
+  },
+  {
+   "day": "2026-11-01",
+   "usd": 4.3528
+  },
+  {
+   "day": "2026-11-02",
+   "usd": 4.0865
+  },
+  {
+   "day": "2026-11-03",
+   "usd": 3.8334
+  },
+  {
+   "day": "2026-11-04",
+   "usd": 3.9829
+  },
+  {
+   "day": "2026-11-05",
+   "usd": 3.8999
+  },
+  {
+   "day": "2026-11-06",
+   "usd": 3.7179
+  },
+  {
+   "day": "2026-11-07",
+   "usd": 3.7024
+  },
+  {
+   "day": "2026-11-08",
+   "usd": 3.6733
+  },
+  {
+   "day": "2026-11-09",
+   "usd": 3.582
+  },
+  {
+   "day": "2026-11-10",
+   "usd": 3.598
+  },
+  {
+   "day": "2026-11-11",
+   "usd": 3.6774
+  },
+  {
+   "day": "2026-11-12",
+   "usd": 3.5435
+  }
+ ]
+}

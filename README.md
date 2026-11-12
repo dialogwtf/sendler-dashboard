@@ -6,6 +6,10 @@ candles, holders, smart money, big transfers, new contracts and pools, network l
 **Live:** https://dash.sendler.xyz · **API:** https://api.sendler.xyz/v2/dash/health · built at NEAR HACKATHON
 (November 2026), track **Investment Thesis** (onchain data, dashboards).
 
+**The thesis:** [THESIS.md](THESIS.md) — what three months of this data say about NEAR's on-chain trading economy,
+with the evidence for, the evidence against, and the numbers that would change the conclusion. Rebuild every chart
+and number with `python thesis/build.py`.
+
 Everything on the screen is derived from NEAR mainnet blocks. The indexer reads one stream of optimistic blocks and
 makes **no RPC calls on the block path**; a launch appears on the site within about a second of its transaction.
 
@@ -168,16 +172,22 @@ api/
   docs/API_ROUTES.md         endpoint reference
 web/
   src/                       app shell, API client + live reducers, widgets, pages, ui kit, locales
+thesis/
+  build.py, render.py        recompute the snapshot from the database; rebuild numbers and charts (plain Python)
+  data/                      snapshot.json (aggregates), numbers.md (every number of THESIS.md and its source)
+  charts/                    SVG charts, light and dark
+THESIS.md                    the investment thesis
 ```
 
 ## Hackathon window and earlier work
 
-The dashboard — the indexer worker, the API and the site — was built between 9 and 12 November 2026, inside the
-hackathon window (announced 2026-10-19). It runs in production next to other Sendler services (an NFT marketplace
-indexer and a Telegram trading bot), and a few building blocks were taken from that codebase. This repository is an
-extraction of the dashboard so that it runs on its own.
+The dashboard — the indexer worker, the API, the site and the thesis — was built between 9 and 12 November 2026,
+inside the hackathon window (announced 2026-10-19). It runs in production next to other Sendler services (an NFT
+marketplace indexer and a Telegram trading bot), and a few building blocks were taken from that codebase. This
+repository is an extraction of the dashboard so that it runs on its own.
 
-Code that existed **before** the announcement and is reused here in adapted form (the baseline):
+About 93% of the code here was written inside the window. The rest — eight files, about 1,560 of 23,400 lines of
+source — is adapted from code that existed **before** the announcement (the baseline):
 
 | In this repository | Origin (as of 2026-10-18) |
 |---|---|
@@ -197,7 +207,7 @@ git diff pre-hackathon hackathon-submission --stat
 
 Written inside the window: all of `web/`, all of `api/`, and in `indexer/` — `worker.py`, `trades.py`,
 `launches.py`, `holders.py`, `network.py`, `blocks.py`, `prices.py`, `events.py`, `history.py`, `smart.py`,
-`fee_farm.py`, `reference.py`, the scripts and the tests.
+`fee_farm.py`, `reference.py`, the scripts and the tests; and all of `thesis/`.
 
 ### What is not in this repository
 
