@@ -134,7 +134,7 @@ The data also contains reasons to think the claim is too pessimistic. They are p
 - **The game is closer to zero-sum than to a rug.** Traders as a group lost 47K NEAR on 5.09M put in — under 1%.
   Money moved from many wallets to few; little of it left the table. And dumping is not the norm: in 82% of launches the
   creator did not dump, and the weekly dump rate fell from 27% at the end of October to 20% a week later.
-- **A small number of tokens do live.** 101 launches older than a week still trade, 0.4% of launches passed a $100K
+- **A small number of tokens do live.** 105 launches older than a week still trade, 0.4% of launches passed a $100K
   market cap, and the largest reached 112 holders. A power-law outcome is what an early market looks like, not
   proof that there is no market.
 
