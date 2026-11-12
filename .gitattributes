@@ -1,0 +1,3 @@
+# generated files are written with LF on every platform, so a rebuild leaves the tree clean
+thesis/charts/*.svg text eol=lf
+thesis/data/* text eol=lf
