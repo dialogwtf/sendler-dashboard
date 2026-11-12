@@ -1,24 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 298" width="880" height="298" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="What happens to a launched token">
 <rect width="880" height="298" fill="#fcfcfb"/>
 <text x="24.0" y="30.0" fill="#0b0b0b" font-size="15" font-weight="600" text-anchor="start">What happens to a launched token</text>
-<text x="24.0" y="49.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="start">Share of 1,858 Nearly and JustHoot launches, 2026-10-03 to 2026-11-12</text>
+<text x="24.0" y="49.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="start">Share of 1,844 Nearly and JustHoot launches, 2026-10-03 to 2026-11-12</text>
 <line x1="330" x2="330" y1="72" y2="282" stroke="#c3c2b7"/>
 <text x="318.0" y="93.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Got at least one trade</text>
-<path d="M330,80 H787.4 Q791.4,80 791.4,84.0 V94.0 Q791.4,98 787.4,98 H330 Z" fill="#2a78d6"/>
-<text x="799.4" y="93.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">98.2%</text>
+<path d="M330,80 H718.6 Q722.6,80 722.6,84.0 V94.0 Q722.6,98 718.6,98 H330 Z" fill="#2a78d6"/>
+<text x="730.6" y="93.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">98.2%</text>
 <text x="318.0" y="127.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Creator dumped within 5 minutes of trading</text>
-<path d="M330,114 H408.6 Q412.6,114 412.6,118.0 V128.0 Q412.6,132 408.6,132 H330 Z" fill="#2a78d6"/>
-<text x="420.6" y="127.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">17.6%</text>
+<path d="M330,114 H397.1 Q401.1,114 401.1,118.0 V128.0 Q401.1,132 397.1,132 H330 Z" fill="#2a78d6"/>
+<text x="409.1" y="127.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">17.8%</text>
 <text x="318.0" y="161.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Peak price at least 2x the first trade</text>
-<path d="M330,148 H356.4 Q360.4,148 360.4,152.0 V162.0 Q360.4,166 356.4,166 H330 Z" fill="#2a78d6"/>
-<text x="368.4" y="161.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">6.5%</text>
-<text x="318.0" y="195.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Still traded a week later</text>
-<path d="M330,182 H355.5 Q359.5,182 359.5,186.0 V196.0 Q359.5,200 355.5,200 H330 Z" fill="#2a78d6"/>
-<text x="367.5" y="195.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">6.3%</text>
-<text x="318.0" y="229.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Peak market cap of $10K or more</text>
-<path d="M330,216 H346.6 Q350.6,216 350.6,220.0 V230.0 Q350.6,234 346.6,234 H330 Z" fill="#2a78d6"/>
-<text x="358.6" y="229.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">4.4%</text>
-<text x="318.0" y="263.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Reached 50 holders</text>
-<path d="M330,250 H333.4 Q336.8,250 336.8,253.4 V264.6 Q336.8,268 333.4,268 H330 Z" fill="#2a78d6"/>
-<text x="344.8" y="263.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">1.5%</text>
+<path d="M330,148 H350.3 Q354.3,148 354.3,152.0 V162.0 Q354.3,166 350.3,166 H330 Z" fill="#2a78d6"/>
+<text x="362.3" y="161.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">6.1%</text>
+<text x="318.0" y="195.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Peak market cap of $10K or more</text>
+<path d="M330,182 H340.6 Q344.6,182 344.6,186.0 V196.0 Q344.6,200 340.6,200 H330 Z" fill="#2a78d6"/>
+<text x="352.6" y="195.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">3.6%</text>
+<text x="318.0" y="229.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Reached 50 holders</text>
+<path d="M330,216 H332.8 Q335.6,216 335.6,218.8 V231.2 Q335.6,234 332.8,234 H330 Z" fill="#2a78d6"/>
+<text x="343.6" y="229.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">1.4%</text>
+<text x="318.0" y="263.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="end">Still has a market a week later</text>
+<path d="M330,250 H332.0 Q334.1,250 334.1,252.0 V266.0 Q334.1,268 332.0,268 H330 Z" fill="#2a78d6"/>
+<text x="342.1" y="263.0" fill="#0b0b0b" font-size="12" font-weight="600" text-anchor="start">1.0%</text>
+<text x="378.9" y="263.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">3+ traders and 10+ NEAR in 3 days</text>
 </svg>

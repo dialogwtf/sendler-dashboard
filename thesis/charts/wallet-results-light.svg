@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 350" width="880" height="350" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="30% of trading wallets made money; the median wallet lost">
 <rect width="880" height="350" fill="#fcfcfb"/>
 <text x="24.0" y="30.0" fill="#0b0b0b" font-size="15" font-weight="600" text-anchor="start">30% of trading wallets made money; the median wallet lost</text>
-<text x="24.0" y="49.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="start">10,421 wallets that bought a token for NEAR on a DEX, 2026-09-29 to 2026-11-12</text>
+<text x="24.0" y="49.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="start">10,428 wallets that bought a token for NEAR on a DEX, 2026-09-29 to 2026-11-12</text>
 <rect x="64" y="69" width="10" height="10" rx="2" fill="#e34948"/>
 <text x="80.0" y="78.0" fill="#52514e" font-size="12" font-weight="400" text-anchor="start">Lost NEAR</text>
 <rect x="153.4" y="69" width="10" height="10" rx="2" fill="#2a78d6"/>
@@ -21,26 +21,26 @@
 <path d="M101.2,300.0 V238.8 Q101.2,234.8 105.2,234.8 H121.2 Q125.2,234.8 125.2,238.8 V300.0 Z" fill="#e34948"/>
 <text x="113.2" y="228.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">815</text>
 <text x="113.2" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">under -100</text>
-<path d="M199.8,300.0 V150.7 Q199.8,146.7 203.8,146.7 H219.8 Q223.8,146.7 223.8,150.7 V300.0 Z" fill="#e34948"/>
-<text x="211.8" y="140.7" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">1,916</text>
+<path d="M199.8,300.0 V151.7 Q199.8,147.7 203.8,147.7 H219.8 Q223.8,147.7 223.8,151.7 V300.0 Z" fill="#e34948"/>
+<text x="211.8" y="141.7" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">1,904</text>
 <text x="211.8" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">-100 to -10</text>
-<path d="M298.2,300.0 V123.1 Q298.2,119.1 302.2,119.1 H318.2 Q322.2,119.1 322.2,123.1 V300.0 Z" fill="#e34948"/>
-<text x="310.2" y="113.1" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">2,261</text>
+<path d="M298.2,300.0 V123.8 Q298.2,119.8 302.2,119.8 H318.2 Q322.2,119.8 322.2,123.8 V300.0 Z" fill="#e34948"/>
+<text x="310.2" y="113.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">2,252</text>
 <text x="310.2" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">-10 to -1</text>
-<path d="M396.8,300.0 V119.8 Q396.8,115.8 400.8,115.8 H416.8 Q420.8,115.8 420.8,119.8 V300.0 Z" fill="#e34948"/>
-<text x="408.8" y="109.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">2,303</text>
+<path d="M396.8,300.0 V120.2 Q396.8,116.2 400.8,116.2 H416.8 Q420.8,116.2 420.8,120.2 V300.0 Z" fill="#e34948"/>
+<text x="408.8" y="110.2" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">2,297</text>
 <text x="408.8" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">-1 to 0</text>
-<path d="M495.2,300.0 V238.3 Q495.2,234.3 499.2,234.3 H515.2 Q519.2,234.3 519.2,238.3 V300.0 Z" fill="#2a78d6"/>
-<text x="507.2" y="228.3" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">821</text>
+<path d="M495.2,300.0 V238.8 Q495.2,234.8 499.2,234.8 H515.2 Q519.2,234.8 519.2,238.8 V300.0 Z" fill="#2a78d6"/>
+<text x="507.2" y="228.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">815</text>
 <text x="507.2" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">0 to 1</text>
-<path d="M593.8,300.0 V231.4 Q593.8,227.4 597.8,227.4 H613.8 Q617.8,227.4 617.8,231.4 V300.0 Z" fill="#2a78d6"/>
-<text x="605.8" y="221.4" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">907</text>
+<path d="M593.8,300.0 V229.8 Q593.8,225.8 597.8,225.8 H613.8 Q617.8,225.8 617.8,229.8 V300.0 Z" fill="#2a78d6"/>
+<text x="605.8" y="219.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">928</text>
 <text x="605.8" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">1 to 10</text>
-<path d="M692.2,300.0 V233.8 Q692.2,229.8 696.2,229.8 H712.2 Q716.2,229.8 716.2,233.8 V300.0 Z" fill="#2a78d6"/>
-<text x="704.2" y="223.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">877</text>
+<path d="M692.2,300.0 V232.9 Q692.2,228.9 696.2,228.9 H712.2 Q716.2,228.9 716.2,232.9 V300.0 Z" fill="#2a78d6"/>
+<text x="704.2" y="222.9" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">889</text>
 <text x="704.2" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">10 to 100</text>
-<path d="M790.8,300.0 V262.3 Q790.8,258.3 794.8,258.3 H810.8 Q814.8,258.3 814.8,262.3 V300.0 Z" fill="#2a78d6"/>
-<text x="802.8" y="252.3" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">521</text>
+<path d="M790.8,300.0 V261.8 Q790.8,257.8 794.8,257.8 H810.8 Q814.8,257.8 814.8,261.8 V300.0 Z" fill="#2a78d6"/>
+<text x="802.8" y="251.8" fill="#0b0b0b" font-size="11" font-weight="600" text-anchor="middle">528</text>
 <text x="802.8" y="316.0" fill="#898781" font-size="11" font-weight="400" text-anchor="middle">over 100</text>
 <text x="458.0" y="336.0" fill="#52514e" font-size="11" font-weight="400" text-anchor="middle">Wallet result over the window, NEAR</text>
 </svg>

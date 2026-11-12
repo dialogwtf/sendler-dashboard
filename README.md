@@ -15,9 +15,10 @@ candles, holders, smart money, big transfers, new contracts and pools, network l
 
 *Screenshots of https://dash.sendler.xyz taken on 12 November 2026: the home screen, a token page, the phone layout.*
 
-**The thesis:** [THESIS.md](THESIS.md) — what three months of this data say about NEAR's on-chain trading economy,
-with the evidence for, the evidence against, and the numbers that would change the conclusion. Rebuild every chart
-and number with `python thesis/build.py`.
+**The thesis:** [THESIS.md](THESIS.md) — a NEAR memecoin is a ten-minute trade, not an asset, and its odds are
+public at launch: who created it and how early the buyer is. 1,844 launches and 18,292 wallet positions, with the
+evidence for, the evidence against, and the numbers that would change the conclusion. Rebuild every chart and
+number with `python thesis/build.py`.
 
 Everything on the screen is derived from NEAR mainnet blocks. The indexer reads one stream of optimistic blocks and
 makes **no RPC calls on the block path**; a launch appears on the site within about a second of its transaction.

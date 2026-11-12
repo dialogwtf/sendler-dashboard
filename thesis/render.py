@@ -288,26 +288,88 @@ def chart_launches(snap: dict, c: dict) -> str:
                   "Average launches per day per week, by launchpad; week starts on the date shown", body)
 
 
-def chart_outcomes(snap: dict, c: dict) -> str:
-    L, cr, h = snap["launches"], snap["creators"], snap["holders"]
-    rows = [("Got at least one trade", L["traded_share"]),
-            ("Creator dumped within 5 minutes of trading", cr["dumped_share"]),
-            ("Peak price at least 2x the first trade", L["x_max"]["ge2_share"]),
-            ("Still traded a week later", L["alive"]["share"]),
-            ("Peak market cap of $10K or more", L["peak_cap_usd"]["ge_10k_share"]),
-            ("Reached 50 holders", h["ge_50_share"])]
-    x0, x1, top, rowh = 330, W - 80, 78, 34
+def _hbars(c: dict, rows: list[tuple[str, float | None, str]], title: str, subtitle: str, x0: int = 330,
+           vmax: float = 1.0) -> str:
+    """Horizontal bars of one measure (a share): label on the left, value and a note on the right."""
+    x1, top, rowh = W - 150, 78, 34
     body = [f'<line x1="{x0}" x2="{x0}" y1="{top - 6}" y2="{top + rowh * len(rows)}" stroke="{c["axis"]}"/>']
-    for i, (label, v) in enumerate(rows):
+    for i, (label, v, note) in enumerate(rows):
         y = top + rowh * i
-        w = (x1 - x0) * (v or 0)
+        w = (x1 - x0) * (v or 0) / vmax
         body.append(_text(x0 - 12, y + 15, label, c["ink2"], 12, "end"))
         r = min(4.0, w / 2)
-        body.append(f'<path d="M{x0},{y + 2} H{x0 + w - r:.1f} Q{x0 + w:.1f},{y + 2} {x0 + w:.1f},{y + 2 + r:.1f} '
-                    f'V{y + 20 - r:.1f} Q{x0 + w:.1f},{y + 20} {x0 + w - r:.1f},{y + 20} H{x0} Z" fill="{c["s1"]}"/>')
-        body.append(_text(x0 + w + 8, y + 15, f"{100 * (v or 0):.1f}%", c["ink"], 12, weight=600))
-    return _frame(c, top + rowh * len(rows) + 16, "What happens to a launched token",
-                  f"Share of {L['total']:,} Nearly and JustHoot launches, {L['from']} to {L['to']}", body)
+        if w > 0:
+            body.append(f'<path d="M{x0},{y + 2} H{x0 + w - r:.1f} Q{x0 + w:.1f},{y + 2} {x0 + w:.1f},{y + 2 + r:.1f} '
+                        f'V{y + 20 - r:.1f} Q{x0 + w:.1f},{y + 20} {x0 + w - r:.1f},{y + 20} H{x0} Z" fill="{c["s1"]}"/>')
+        value = f"{100 * (v or 0):.1f}%"
+        body.append(_text(x0 + w + 8, y + 15, value, c["ink"], 12, weight=600))
+        if note:
+            body.append(_text(x0 + w + 16 + 7.2 * len(value), y + 15, note, c["muted"], 11))
+    return _frame(c, top + rowh * len(rows) + 16, title, subtitle, body)
+
+
+def chart_outcomes(snap: dict, c: dict) -> str:
+    L, cr, h = snap["launches"], snap["creators"], snap["holders"]
+    a = L["alive"]
+    rows = [("Got at least one trade", L["traded_share"], ""),
+            ("Creator dumped within 5 minutes of trading", cr["dumped_share"], ""),
+            ("Peak price at least 2x the first trade", L["x_max"]["ge2_share"], ""),
+            ("Peak market cap of $10K or more", L["peak_cap_usd"]["ge_10k_share"], ""),
+            ("Reached 50 holders", h["ge_50_share"], ""),
+            ("Still has a market a week later", a["share"],
+             f"{a['min_traders']}+ traders and {a['min_near']:.0f}+ NEAR in 3 days")]
+    return _hbars(c, rows, "What happens to a launched token",
+                  f"Share of {L['total']:,} Nearly and JustHoot launches, {L['from']} to {L['to']}")
+
+
+def chart_creator(snap: dict, c: dict) -> str:
+    g = snap["edge"]["launches"]
+    rows = [("Creator's first launch, bought in and did not dump", "clean"),
+            ("Creator's first launch", "first"),
+            ("All launches", "all"),
+            ("Creator had launched before", "repeat"),
+            ("Creator's previous launch was under 3 hours earlier", "relaunch_3h"),
+            ("Creator dumped within 5 minutes", "dumped_now"),
+            ("Creator had launched 3 or more before", "repeat3")]
+    data = [(label, g[k]["x2_share"], f"{g[k]['x2']} of {g[k]['traded']:,}") for label, k in rows]
+    vmax = max(v or 0 for _, v, _ in data) * 1.15
+    return _hbars(c, data, "Who launched a token says how likely it is to run",
+                  "Share of launches whose peak price was at least 2x the first trade, by what is known about the creator",
+                  x0=400, vmax=vmax)
+
+
+def chart_entry(snap: dict, c: dict) -> str:
+    rows = snap["edge"]["entry"]
+    series = [("win_share", "s1", "Position in profit"), ("lost_half_share", "s2", "Lost half or more")]
+    vmax, step = _nice_max(100 * max(r[k] or 0 for r in rows for k, _, _ in series))
+    top, bottom = 104, 300
+    body = _legend(c, 78, [(c[col], label) for _, col, label in series])
+    v = 0.0
+    while v <= vmax + 1e-9:  # a percent axis
+        y = bottom - (bottom - top) * v / vmax
+        body.append(f'<line x1="{LEFT}" x2="{W - RIGHT}" y1="{y:.1f}" y2="{y:.1f}" '
+                    f'stroke="{c["axis"] if v == 0 else c["grid"]}" stroke-width="1"/>')
+        body.append(_text(LEFT - 8, y + 4, f"{v:.0f}%", c["muted"], 11, "end"))
+        v += step
+    slot = (W - LEFT - RIGHT) / len(rows)
+    bw = 26.0
+    for i, r in enumerate(rows):
+        x = LEFT + slot * i + (slot - 2 * bw - 2) / 2
+        for j, (k, col, _) in enumerate(series):
+            val = 100 * (r[k] or 0)
+            h = (bottom - top) * val / vmax
+            bx = x + j * (bw + 2)
+            body.append(_bar(bx, bottom - h, bw, h, c[col]))
+            body.append(_text(bx + bw / 2, bottom - h - 6, f"{val:.0f}%", c["ink"], 11, "middle", 600))
+        mid = x + bw + 1
+        body.append(_text(mid, bottom + 16, r["label"], c["ink2"], 11, "middle"))
+        body.append(_text(mid, bottom + 31, f"{r['n']:,} positions", c["muted"], 11, "middle"))
+    body.append(_text(LEFT + (W - LEFT - RIGHT) / 2, bottom + 52,
+                      "Time of the wallet's first buy, counted from the token's first trade", c["ink2"], 11, "middle"))
+    e = snap["edge"]
+    return _frame(c, 366, "Late buyers lose more often, and lose more",
+                  f"Share of {e['positions']:,} positions of {e['wallets']:,} wallets in {e['tokens']:,} launch tokens; "
+                  f"each position counts once", body)
 
 
 def chart_wallets(snap: dict, c: dict) -> str:
@@ -333,13 +395,72 @@ def chart_wallets(snap: dict, c: dict) -> str:
 
 
 CHARTS = {"activity-vs-price": chart_activity, "dex-volume": chart_volume, "launches-per-week": chart_launches,
-          "launch-outcomes": chart_outcomes, "wallet-results": chart_wallets}
+          "launch-outcomes": chart_outcomes, "wallet-results": chart_wallets, "creator-record": chart_creator,
+          "entry-time": chart_entry}
+EDGE_CHARTS = {"creator-record", "entry-time"}
 
 
 # ── numbers table ───────────────────────────────────────────────────────────
 
 def _p(x) -> str:
     return "n/a" if x is None else f"{100 * x:.1f}%"
+
+
+def _roi(x) -> str:
+    return "n/a" if x is None else f"{100 * x:+.1f}%"
+
+
+def _edge_rows(e: dict) -> list[tuple[str, str, str]]:
+    g, h, r, big = e["launches"], e["halves"], e["recall"], e["largest"]
+
+    def tok(k: str, src: dict = g) -> str:
+        s = src[k]
+        return f"{_p(s['x2_share'])} ({s['x2']} of {s['traded']:,}) / {_p(s['hold10_share'])} / {_p(s['vol100_share'])}"
+
+    def pos(s: dict) -> str:
+        if not s.get("n"):
+            return "n/a"
+        return (f"{_p(s['win_share'])} / {_roi(s['median_roi'])} / {_roi(s['mean_roi'])} / {_p(s['lost_half_share'])} / "
+                f"{_p(s['doubled_share'])} (n = {s['n']:,})")
+
+    rows = [
+        ("**What separates outcomes: the creator** (`edge.launches`: `dash_launches`, `sniper_launch_stats`, `dash_holder_stats`)", "", ""),
+        ("Peak at least 2x / reached 10 holders / lifetime volume of 100+ NEAR: all launches", tok("all"), "launches, each counted once"),
+        ("… creator's first launch", tok("first"), "no earlier launch by the same account in the window"),
+        ("… creator had launched before", tok("repeat"), ""),
+        ("… creator had launched 3 or more before", tok("repeat3"), ""),
+        ("… a launch of the same creator had been dumped before", tok("dumped_before"), ""),
+        ("… creator's previous launch was under 3 hours earlier", tok("relaunch_3h"), ""),
+        ("… creator dumped this launch within 5 minutes", tok("dumped_now"), ""),
+        ("… creator took no tokens of the launch", tok("no_dev_buy"), "`dev_in = 0`"),
+        ("… **first launch, creator bought in, did not dump**", tok("clean"), "the filter used below"),
+        ("… everything else", tok("rest"), ""),
+        (f"Same filter, launches before / from {e['split_day']}: passed", f"{tok('clean', h['first_half'])} // {tok('clean', h['second_half'])}", "the window cut in two at its median launch"),
+        ("… everything else", f"{tok('rest', h['first_half'])} // {tok('rest', h['second_half'])}", ""),
+        ("Launches that doubled / went 10x: passed the filter", f"{r['x2_in_clean']} of {r['x2']} / {r['x10_in_clean']} of {r['x10']}", "what the filter would have kept"),
+        ("Ten launches with the largest volume: passed the filter / came from a repeat creator", f"{r['top10_volume_in_clean']} / {r['top10_volume_by_repeat']}", ""),
+        ("Launches made through a launchpad's own launcher account", f"{e['launcher_accounts_skipped']}", "no creator record: the account stands for many people"),
+        ("**What separates outcomes: the time of entry** (`edge.entry`: `sniper_smart_flows`, `sniper_smart_prices`)", "", ""),
+        ("Positions in launch tokens", f"{e['positions']:,} positions of {e['wallets']:,} wallets in {e['tokens']:,} tokens", "one wallet in one token; counted once each, not weighted by size"),
+        ("In profit / median result / mean result / lost half or more / doubled, by time of first buy after the token's first trade", "", ""),
+        *[(f"… {b['label'].lower()}", pos(b), "") for b in e["entry"]],
+        ("Launches that passed the creator filter: first 10 minutes / 10 to 60 minutes / later", " // ".join(pos(e["entry_by_launch"]["clean"][k]) for k in ("le_10m", "10m_1h", "gt_1h")), ""),
+        ("Everything else: first 10 minutes / 10 to 60 minutes / later", " // ".join(pos(e["entry_by_launch"]["rest"][k]) for k in ("le_10m", "10m_1h", "gt_1h")), ""),
+        (f"First 10 minutes, launches before / from {e['split_day']}: passed the filter", f"{pos(e['early_by_half']['first_half']['clean'])} // {pos(e['early_by_half']['second_half']['clean'])}", ""),
+        ("… everything else", f"{pos(e['early_by_half']['first_half']['rest'])} // {pos(e['early_by_half']['second_half']['rest'])}", ""),
+        ("**The largest launch token**", "", ""),
+        ("Share of all NEAR put into launch tokens / positions", f"{_p(big['share_of_near'])} / {big['positions']:,}", f"`{big['token']}`; the reason positions are not weighted by size"),
+        ("Its creator's earlier launches / minutes since the previous one / peak vs first trade", f"{big['creator_earlier_launches']} / {'n/a' if big['minutes_since_previous'] is None else big['minutes_since_previous']} / {big['x_max']:,.0f}x", ""),
+        ("Positions in it: in profit / median result / doubled", f"{_p(big['win_share'])} / {_roi(big['median_roi'])} / {_p(big['doubled_share'])}", ""),
+        ("**Does a wallet's record carry over** (`edge.persistence`: all tokens)", "", ""),
+    ]
+    for p in e["persistence"]:
+        rows.append((f"Entries from {p['split']}: wallets in profit — record of profit / of loss / new wallets",
+                     " / ".join(f"{_p(p[k]['profit_after_share'])} of {p[k]['wallets']:,}" for k in ("profit_before", "loss_before", "new")),
+                     "record = 3+ tokens entered before the date"))
+        rows.append(("… their positions: in profit and median result",
+                     " / ".join(f"{_p(p[k]['positions']['win_share'])}, {_roi(p[k]['positions']['median_roi'])}" for k in ("profit_before", "loss_before", "new")), ""))
+    return rows
 
 
 def numbers_md(snap: dict, d: dict) -> str:
@@ -365,18 +486,20 @@ def numbers_md(snap: dict, d: dict) -> str:
     rows += [
         ("**Launches** (`launches`: `dash_launches`)", "", ""),
         ("Launches in the window", f"{L['total']:,} ({L['from']} to {L['to']}): " + ", ".join(f"{p} {n:,}" for p, n in sorted(L["by_pad"].items())), ""),
+        ("Launch records left out", f"{L['misdated_skipped']}", "the token traded before the record's date: a pool created against an older token, not a launch of the window"),
         ("Got at least one trade", _p(L["traded_share"]), "`px0` is set"),
         ("Lifetime volume per launch: median / 90th percentile", f"{L['volume_near']['median']:,} / {L['volume_near']['p90']:,} NEAR", ""),
         ("Peak price vs first trade: median", f"{L['x_max']['median']}x", "`px_max / px0`"),
         ("Peak at least 2x / 5x / 10x", f"{_p(L['x_max']['ge2_share'])} / {_p(L['x_max']['ge5_share'])} / {_p(L['x_max']['ge10_share'])}", ""),
         ("Last price below the first trade", _p(L["x_now"]["below_start_share"]), "`px / px0 < 1`"),
         ("Peak market cap: median / share at $10K+ / $100K+", f"${L['peak_cap_usd']['median']:,.0f} / {_p(L['peak_cap_usd']['ge_10k_share'])} / {_p(L['peak_cap_usd']['ge_100k_share'])}", f"`px_max` x 1e9 supply x NEAR at ${L['peak_cap_usd']['near_usd']}"),
-        ("Launches older than 7 days still traded in the last 3 days", f"{L['alive']['traded_in_last_3d']:,} of {L['alive']['older_than_7d']:,} ({_p(L['alive']['share'])})", ""),
+        ("Launches older than 7 days that still have a market", f"{L['alive']['traded_in_last_3d']:,} of {L['alive']['older_than_7d']:,} ({_p(L['alive']['share'])})", f"{L['alive']['min_traders']}+ traders and {L['alive']['min_near']:.0f}+ NEAR of volume in the last 3 days (`dash_candles`, `i: 1h`)"),
+        ("… with any trade at all in the last 3 days", f"{L['alive']['any_trade_in_last_3d']:,} ({_p(L['alive']['any_trade_share'])})", "not used: one wallet selling dust in hundreds of dead tokens moves it"),
         ("Unique creators / with a single launch / with 5 or more", f"{L['creators']['unique']:,} / {_p(L['creators']['one_launch_share'])} / {L['creators']['ge5_launches']}", ""),
         ("Launches by the 10 most active creators", _p(L["creators"]["top10_launch_share"]), ""),
         (f"Launches seen live with tax data: built to tax bots", f"{L['live']['fee_farm']} of {L['live']['n']} ({_p(L['live']['fee_farm_share'])})", "`fee_farm` is set (live launches only)"),
         ("**Creators** (`creators`: `sniper_launch_stats`)", "", ""),
-        ("Creator sold half or more of his tokens within 5 minutes of trading", f"{cr['dumped']:,} of {cr['judged']:,} ({_p(cr['dumped_share'])})", "`dumped`"),
+        ("Creator sold half or more of their own tokens within 5 minutes of trading", f"{cr['dumped']:,} of {cr['judged']:,} ({_p(cr['dumped_share'])})", "`dumped`"),
         ("… by launchpad", ", ".join(f"{p} {_p(v['dumped_share'])}" for p, v in sorted(cr["by_pad"].items())), ""),
         ("Creators who received their own tokens / of them sold any within the first hour", f"{_p(cr['creator_held_share'])} / {_p(cr['sold_any_share_of_holders'])}", "`dev_in > 0` / `dev_sold > 0`"),
         ("Creators with 3+ launches who dumped at least half of them", f"{cr['repeat_creators']['dump_half_or_more']} of {cr['repeat_creators']['ge3_launches']} ({_p(cr['repeat_creators']['share'])})", ""),
@@ -390,6 +513,8 @@ def numbers_md(snap: dict, d: dict) -> str:
         ("Share of all profit taken by the top 1% of wallets", _p(w["top1pct_share_of_profit"]), ""),
         ("Wallets with 5+ tokens traded: in profit", f"{_p(w['active_ge5_tokens']['profitable_share'])} of {w['active_ge5_tokens']['wallets']:,}", ""),
     ]
+    if (snap.get("edge") or {}).get("positions"):
+        rows += _edge_rows(snap["edge"])
     if "net_txs_day" in d:
         rows += [
             ("**Network** (`network`: `dash_network`, `i: 1d`)", "", ""),
@@ -425,6 +550,8 @@ def render(snap: dict, charts_dir: Path, numbers_path: Path) -> dict:
     d = derive(snap)
     charts_dir.mkdir(parents=True, exist_ok=True)
     for name, fn in CHARTS.items():
+        if name in EDGE_CHARTS and not (snap.get("edge") or {}).get("positions"):
+            continue  # a database without launches or wallet positions yet
         for theme, colors in THEMES.items():
             (charts_dir / f"{name}-{theme}.svg").write_text(fn(snap, colors), encoding="utf-8", newline="\n")
     numbers_path.parent.mkdir(parents=True, exist_ok=True)

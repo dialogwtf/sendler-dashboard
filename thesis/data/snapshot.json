@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-12T09:43:01Z",
- "near_usd": 3.49,
+ "generated_at": "2026-11-12T14:36:19Z",
+ "near_usd": 3.35,
  "dex_daily": [
   {
    "day": "2026-08-11",
@@ -924,105 +924,106 @@
   },
   {
    "day": "2026-11-12",
-   "near": 76605.21,
-   "usd": 272486.59,
-   "trades": 7843,
-   "tokens": 216,
-   "launch_near": 6045.62,
-   "launch_tokens": 151,
-   "traders": 225
+   "near": 160194.78,
+   "usd": 558626.75,
+   "trades": 18089,
+   "tokens": 1066,
+   "launch_near": 19607.19,
+   "launch_tokens": 972,
+   "traders": 405
   }
  ],
  "concentration": {
   "days": 30,
-  "tokens": 1994,
-  "near": 6167630.9,
-  "launchpad_share": 0.5759,
-  "launchpad_tokens": 1619,
-  "top1_share": 0.211,
-  "top5_share": 0.5054,
-  "top10_share": 0.6455,
+  "tokens": 2500,
+  "near": 6251224.3,
+  "launchpad_share": 0.5704,
+  "launchpad_tokens": 2123,
+  "top1_share": 0.2088,
+  "top5_share": 0.5083,
+  "top10_share": 0.6473,
   "top10": [
    {
     "token": "batman-4.nearlytrade.near",
-    "near": 1301176.0,
-    "share": 0.211
+    "near": 1305303.0,
+    "share": 0.2088
    },
    {
     "token": "nearly-993927.nearlytrade.near",
-    "near": 596035.2,
-    "share": 0.0966
-   },
-   {
-    "token": "token.rhealab.near",
-    "near": 473344.8,
-    "share": 0.0767
+    "near": 596739.2,
+    "share": 0.0955
    },
    {
     "token": "zec.omft.near",
-    "near": 459659.4,
-    "share": 0.0745
+    "near": 509841.1,
+    "share": 0.0816
+   },
+   {
+    "token": "token.rhealab.near",
+    "near": 476838.8,
+    "share": 0.0763
    },
    {
     "token": "imeme-2.v2-launchpad.justhoot.near",
-    "near": 286669.7,
-    "share": 0.0465
+    "near": 289049.0,
+    "share": 0.0462
    },
    {
     "token": "hoot-8ecf65.launchpad.justhoot.near",
-    "near": 226103.5,
-    "share": 0.0367
+    "near": 228588.6,
+    "share": 0.0366
    },
    {
     "token": "qtc.omft.near",
-    "near": 193419.2,
-    "share": 0.0314
+    "near": 194227.0,
+    "share": 0.0311
    },
    {
     "token": "three-de86d6.launchpad.justhoot.near",
-    "near": 152067.1,
-    "share": 0.0247
+    "near": 152096.2,
+    "share": 0.0243
    },
    {
     "token": "meta-pool.near",
-    "near": 148077.1,
-    "share": 0.024
+    "near": 148089.5,
+    "share": 0.0237
    },
    {
     "token": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
-    "near": 144892.9,
-    "share": 0.0235
+    "near": 145870.9,
+    "share": 0.0233
    }
   ]
  },
  "launches": {
   "from": "2026-10-03",
   "to": "2026-11-12",
-  "total": 1858,
+  "total": 1844,
   "by_pad": {
-   "justhoot": 577,
+   "justhoot": 563,
    "nearly": 1281
   },
+  "misdated_skipped": 16,
   "per_day": [
    {
     "day": "2026-10-03",
     "nearly": 31,
-    "justhoot": 14
+    "justhoot": 8
    },
    {
     "day": "2026-10-04",
     "nearly": 64,
-    "justhoot": 27
+    "justhoot": 23
    },
    {
     "day": "2026-10-05",
     "nearly": 55,
-    "justhoot": 13
+    "justhoot": 11
    },
    {
     "day": "2026-10-06",
     "nearly": 48,
-    "justhoot": 10
+    "justhoot": 9
    },
    {
     "day": "2026-10-07",
@@ -1037,7 +1038,7 @@
    {
     "day": "2026-10-09",
     "nearly": 46,
-    "justhoot": 10
+    "justhoot": 8
    },
    {
     "day": "2026-10-10",
@@ -1132,7 +1133,7 @@
    {
     "day": "2026-10-28",
     "justhoot": 10,
-    "nearly": 33
+    "nearly": 32
    },
    {
     "day": "2026-10-29",
@@ -1205,83 +1206,87 @@
    },
    {
     "day": "2026-11-12",
-    "nearly": 8,
-    "justhoot": 1
+    "nearly": 9,
+    "justhoot": 2
    }
   ],
-  "traded": 1824,
-  "traded_share": 0.9817,
+  "traded": 1810,
+  "traded_share": 0.9816,
   "volume_near": {
-   "median": 60.21,
-   "p90": 715.8,
-   "total": 3290562.53,
-   "under_10_share": 0.1727,
-   "over_1000_share": 0.0779
+   "median": 59.24,
+   "p90": 684.4,
+   "total": 1679789.64,
+   "under_10_share": 0.174,
+   "over_1000_share": 0.0729
   },
   "x_max": {
-   "median": 1.036,
-   "ge2_share": 0.0647,
-   "ge5_share": 0.017,
+   "median": 1.035,
+   "ge2_share": 0.0608,
+   "ge5_share": 0.016,
    "ge10_share": 0.0088
   },
   "x_now": {
-   "median": 0.979,
-   "below_start_share": 0.8904,
-   "below_half_share": 0.0027,
-   "above_2x_share": 0.0093
+   "median": 0.978,
+   "below_start_share": 0.9094,
+   "below_half_share": 0.0044,
+   "above_2x_share": 0.0088
   },
   "peak_cap_usd": {
-   "n": 1824,
-   "near_usd": 3.49,
-   "median": 3919.0,
-   "ge_10k_share": 0.0439,
-   "ge_100k_share": 0.0038
+   "n": 1810,
+   "near_usd": 3.35,
+   "median": 3760.0,
+   "ge_10k_share": 0.0365,
+   "ge_100k_share": 0.0028
   },
   "alive": {
-   "older_than_7d": 1673,
-   "traded_in_last_3d": 105,
-   "share": 0.0628
+   "older_than_7d": 1661,
+   "traded_in_last_3d": 17,
+   "share": 0.0102,
+   "min_near": 10.0,
+   "min_traders": 3,
+   "any_trade_in_last_3d": 429,
+   "any_trade_share": 0.2583
   },
   "creators": {
-   "unique": 1101,
-   "one_launch_share": 0.7103,
+   "unique": 1090,
+   "one_launch_share": 0.7092,
    "ge5_launches": 56,
-   "top10_launch_share": 0.0888,
+   "top10_launch_share": 0.0895,
    "max_by_one": 50
   },
   "live": {
-   "n": 74,
+   "n": 76,
    "fee_farm": 20,
-   "fee_farm_share": 0.2703,
-   "no_dev_buy": 42,
-   "no_dev_buy_share": 0.5676
+   "fee_farm_share": 0.2632,
+   "no_dev_buy": 43,
+   "no_dev_buy_share": 0.5658
   }
  },
  "creators": {
-  "launches": 1858,
-  "judged": 1837,
-  "dumped": 323,
-  "dumped_share": 0.1758,
+  "launches": 1844,
+  "judged": 1823,
+  "dumped": 324,
+  "dumped_share": 0.1777,
   "by_pad": {
    "nearly": {
     "n": 1264,
-    "dumped_share": 0.2136
+    "dumped_share": 0.2144
    },
    "justhoot": {
-    "n": 573,
-    "dumped_share": 0.0925
+    "n": 559,
+    "dumped_share": 0.0948
    }
   },
   "by_week": [
    {
     "week": "2026-09-28",
-    "n": 132,
-    "dumped_share": 0.0682
+    "n": 122,
+    "dumped_share": 0.0738
    },
    {
     "week": "2026-10-05",
-    "n": 385,
-    "dumped_share": 0.0961
+    "n": 380,
+    "dumped_share": 0.0974
    },
    {
     "week": "2026-10-12",
@@ -1295,8 +1300,8 @@
    },
    {
     "week": "2026-10-26",
-    "n": 238,
-    "dumped_share": 0.2731
+    "n": 237,
+    "dumped_share": 0.2743
    },
    {
     "week": "2026-11-02",
@@ -1305,39 +1310,516 @@
    },
    {
     "week": "2026-11-09",
-    "n": 105,
-    "dumped_share": 0.0571
+    "n": 107,
+    "dumped_share": 0.0654
    }
   ],
-  "creator_held_tokens": 1213,
-  "creator_held_share": 0.6603,
-  "dumped_share_of_holders": 0.2663,
-  "sold_any_share_of_holders": 0.7181,
+  "creator_held_tokens": 1210,
+  "creator_held_share": 0.6637,
+  "dumped_share_of_holders": 0.2678,
+  "sold_any_share_of_holders": 0.719,
   "first_sell_s": {
-   "median": 425.0,
-   "within_60s_share": 0.137
+   "median": 419.0,
+   "within_60s_share": 0.1374
   },
   "repeat_creators": {
-   "ge3_launches": 129,
+   "ge3_launches": 128,
    "dump_half_or_more": 18,
-   "share": 0.1395
+   "share": 0.1406
+  }
+ },
+ "edge": {
+  "positions": 18292,
+  "wallets": 3309,
+  "tokens": 1725,
+  "split_day": "2026-10-18",
+  "launcher_accounts_skipped": 15,
+  "launches": {
+   "all": {
+    "n": 1844,
+    "traded": 1810,
+    "x2": 110,
+    "x2_share": 0.0608,
+    "x5_share": 0.016,
+    "hold10_share": 0.0456,
+    "vol100_share": 0.3427
+   },
+   "first": {
+    "n": 1089,
+    "traded": 1081,
+    "x2": 88,
+    "x2_share": 0.0814,
+    "x5_share": 0.0222,
+    "hold10_share": 0.0643,
+    "vol100_share": 0.4233
+   },
+   "repeat": {
+    "n": 740,
+    "traded": 714,
+    "x2": 22,
+    "x2_share": 0.0308,
+    "x5_share": 0.007,
+    "hold10_share": 0.0189,
+    "vol100_share": 0.223
+   },
+   "repeat3": {
+    "n": 293,
+    "traded": 277,
+    "x2": 3,
+    "x2_share": 0.0108,
+    "x5_share": 0.0036,
+    "hold10_share": 0.0,
+    "vol100_share": 0.2014
+   },
+   "dumped_before": {
+    "n": 177,
+    "traded": 174,
+    "x2": 5,
+    "x2_share": 0.0287,
+    "x5_share": 0.0057,
+    "hold10_share": 0.0056,
+    "vol100_share": 0.1582
+   },
+   "relaunch_3h": {
+    "n": 410,
+    "traded": 393,
+    "x2": 7,
+    "x2_share": 0.0178,
+    "x5_share": 0.0076,
+    "hold10_share": 0.0098,
+    "vol100_share": 0.1415
+   },
+   "dumped_now": {
+    "n": 324,
+    "traded": 324,
+    "x2": 5,
+    "x2_share": 0.0154,
+    "x5_share": 0.0031,
+    "hold10_share": 0.0062,
+    "vol100_share": 0.2778
+   },
+   "no_dev_buy": {
+    "n": 627,
+    "traded": 598,
+    "x2": 25,
+    "x2_share": 0.0418,
+    "x5_share": 0.0084,
+    "hold10_share": 0.0335,
+    "vol100_share": 0.2329
+   },
+   "clean": {
+    "n": 546,
+    "traded": 543,
+    "x2": 65,
+    "x2_share": 0.1197,
+    "x5_share": 0.0331,
+    "hold10_share": 0.0952,
+    "vol100_share": 0.522
+   },
+   "rest": {
+    "n": 1298,
+    "traded": 1267,
+    "x2": 45,
+    "x2_share": 0.0355,
+    "x5_share": 0.0087,
+    "hold10_share": 0.0247,
+    "vol100_share": 0.2673
+   }
+  },
+  "halves": {
+   "first_half": {
+    "clean": {
+     "n": 385,
+     "traded": 382,
+     "x2": 37,
+     "x2_share": 0.0969,
+     "x5_share": 0.0314,
+     "hold10_share": 0.0883,
+     "vol100_share": 0.4961
+    },
+    "rest": {
+     "n": 537,
+     "traded": 532,
+     "x2": 21,
+     "x2_share": 0.0395,
+     "x5_share": 0.0113,
+     "hold10_share": 0.0242,
+     "vol100_share": 0.3091
+    },
+    "first": {
+     "n": 569,
+     "traded": 564,
+     "x2": 47,
+     "x2_share": 0.0833,
+     "x5_share": 0.0248,
+     "hold10_share": 0.0685,
+     "vol100_share": 0.4798
+    },
+    "repeat": {
+     "n": 346,
+     "traded": 343,
+     "x2": 11,
+     "x2_share": 0.0321,
+     "x5_share": 0.0117,
+     "hold10_share": 0.0231,
+     "vol100_share": 0.2312
+    }
+   },
+   "second_half": {
+    "clean": {
+     "n": 161,
+     "traded": 161,
+     "x2": 28,
+     "x2_share": 0.1739,
+     "x5_share": 0.0373,
+     "hold10_share": 0.1118,
+     "vol100_share": 0.5839
+    },
+    "rest": {
+     "n": 761,
+     "traded": 735,
+     "x2": 24,
+     "x2_share": 0.0327,
+     "x5_share": 0.0068,
+     "hold10_share": 0.025,
+     "vol100_share": 0.2378
+    },
+    "first": {
+     "n": 520,
+     "traded": 517,
+     "x2": 41,
+     "x2_share": 0.0793,
+     "x5_share": 0.0193,
+     "hold10_share": 0.0596,
+     "vol100_share": 0.3615
+    },
+    "repeat": {
+     "n": 394,
+     "traded": 371,
+     "x2": 11,
+     "x2_share": 0.0296,
+     "x5_share": 0.0027,
+     "hold10_share": 0.0152,
+     "vol100_share": 0.2157
+    }
+   }
+  },
+  "entry": [
+   {
+    "label": "First 10 seconds",
+    "from_s": 0,
+    "to_s": 10,
+    "n": 4155,
+    "win_share": 0.3158,
+    "median_roi": -0.0189,
+    "mean_roi": 0.0395,
+    "lost_half_share": 0.001,
+    "doubled_share": 0.0099
+   },
+   {
+    "label": "10 to 60 seconds",
+    "from_s": 10,
+    "to_s": 60,
+    "n": 2230,
+    "win_share": 0.3386,
+    "median_roi": -0.0256,
+    "mean_roi": 0.066,
+    "lost_half_share": 0.0004,
+    "doubled_share": 0.0229
+   },
+   {
+    "label": "1 to 10 minutes",
+    "from_s": 60,
+    "to_s": 600,
+    "n": 3294,
+    "win_share": 0.3273,
+    "median_roi": -0.0425,
+    "mean_roi": 0.1437,
+    "lost_half_share": 0.0428,
+    "doubled_share": 0.0389
+   },
+   {
+    "label": "10 to 60 minutes",
+    "from_s": 600,
+    "to_s": 3600,
+    "n": 2606,
+    "win_share": 0.2563,
+    "median_roi": -0.1047,
+    "mean_roi": -0.0701,
+    "lost_half_share": 0.1424,
+    "doubled_share": 0.0292
+   },
+   {
+    "label": "1 to 24 hours",
+    "from_s": 3600,
+    "to_s": 86400,
+    "n": 3620,
+    "win_share": 0.2378,
+    "median_roi": -0.1446,
+    "mean_roi": -0.1446,
+    "lost_half_share": 0.1939,
+    "doubled_share": 0.024
+   },
+   {
+    "label": "After a day",
+    "from_s": 86400,
+    "to_s": null,
+    "n": 2387,
+    "win_share": 0.2153,
+    "median_roi": -0.1172,
+    "mean_roi": -0.1761,
+    "lost_half_share": 0.1848,
+    "doubled_share": 0.0038
+   }
+  ],
+  "entry_by_launch": {
+   "clean": {
+    "le_10m": {
+     "n": 3936,
+     "win_share": 0.4134,
+     "median_roi": -0.0181,
+     "mean_roi": 0.1692,
+     "lost_half_share": 0.0193,
+     "doubled_share": 0.0312
+    },
+    "10m_1h": {
+     "n": 1617,
+     "win_share": 0.2511,
+     "median_roi": -0.1077,
+     "mean_roi": -0.0364,
+     "lost_half_share": 0.1274,
+     "doubled_share": 0.0365
+    },
+    "gt_1h": {
+     "n": 4412,
+     "win_share": 0.245,
+     "median_roi": -0.1389,
+     "mean_roi": -0.1458,
+     "lost_half_share": 0.1929,
+     "doubled_share": 0.0202
+    }
+   },
+   "rest": {
+    "le_10m": {
+     "n": 5743,
+     "win_share": 0.2643,
+     "median_roi": -0.0229,
+     "mean_roi": 0.0207,
+     "lost_half_share": 0.0122,
+     "doubled_share": 0.0169
+    },
+    "10m_1h": {
+     "n": 989,
+     "win_share": 0.2649,
+     "median_roi": -0.0957,
+     "mean_roi": -0.1252,
+     "lost_half_share": 0.1668,
+     "doubled_share": 0.0172
+    },
+    "gt_1h": {
+     "n": 1595,
+     "win_share": 0.1843,
+     "median_roi": -0.1096,
+     "mean_roi": -0.1884,
+     "lost_half_share": 0.1831,
+     "doubled_share": 0.0044
+    }
+   }
+  },
+  "early_by_half": {
+   "first_half": {
+    "clean": {
+     "n": 2461,
+     "win_share": 0.4015,
+     "median_roi": -0.0197,
+     "mean_roi": 0.1187,
+     "lost_half_share": 0.0122,
+     "doubled_share": 0.0276
+    },
+    "rest": {
+     "n": 2496,
+     "win_share": 0.3053,
+     "median_roi": -0.0208,
+     "mean_roi": 0.0135,
+     "lost_half_share": 0.008,
+     "doubled_share": 0.0168
+    }
+   },
+   "second_half": {
+    "clean": {
+     "n": 1475,
+     "win_share": 0.4332,
+     "median_roi": -0.0133,
+     "mean_roi": 0.2533,
+     "lost_half_share": 0.0312,
+     "doubled_share": 0.0373
+    },
+    "rest": {
+     "n": 3247,
+     "win_share": 0.2328,
+     "median_roi": -0.0253,
+     "mean_roi": 0.0262,
+     "lost_half_share": 0.0154,
+     "doubled_share": 0.0169
+    }
+   }
+  },
+  "persistence": [
+   {
+    "split": "2026-10-17",
+    "profit_before": {
+     "wallets": 332,
+     "profit_after_share": 0.3554,
+     "positions": {
+      "n": 4752,
+      "win_share": 0.3093,
+      "median_roi": -0.0241,
+      "mean_roi": 0.0224,
+      "lost_half_share": 0.0419,
+      "doubled_share": 0.0204
+     }
+    },
+    "loss_before": {
+     "wallets": 441,
+     "profit_after_share": 0.1746,
+     "positions": {
+      "n": 2737,
+      "win_share": 0.2324,
+      "median_roi": -0.0582,
+      "mean_roi": -0.1018,
+      "lost_half_share": 0.1173,
+      "doubled_share": 0.0124
+     }
+    },
+    "new": {
+     "wallets": 2183,
+     "profit_after_share": 0.3023,
+     "positions": {
+      "n": 3870,
+      "win_share": 0.2791,
+      "median_roi": -0.041,
+      "mean_roi": -0.0758,
+      "lost_half_share": 0.1067,
+      "doubled_share": 0.0075
+     }
+    }
+   },
+   {
+    "split": "2026-10-21",
+    "profit_before": {
+     "wallets": 294,
+     "profit_after_share": 0.4048,
+     "positions": {
+      "n": 3141,
+      "win_share": 0.3107,
+      "median_roi": -0.0241,
+      "mean_roi": 0.0385,
+      "lost_half_share": 0.0468,
+      "doubled_share": 0.0232
+     }
+    },
+    "loss_before": {
+     "wallets": 379,
+     "profit_after_share": 0.219,
+     "positions": {
+      "n": 1926,
+      "win_share": 0.2227,
+      "median_roi": -0.0687,
+      "mean_roi": -0.0956,
+      "lost_half_share": 0.1329,
+      "doubled_share": 0.0182
+     }
+    },
+    "new": {
+     "wallets": 1656,
+     "profit_after_share": 0.3466,
+     "positions": {
+      "n": 2599,
+      "win_share": 0.3201,
+      "median_roi": -0.0299,
+      "mean_roi": -0.0477,
+      "lost_half_share": 0.0966,
+      "doubled_share": 0.0073
+     }
+    }
+   },
+   {
+    "split": "2026-10-26",
+    "profit_before": {
+     "wallets": 228,
+     "profit_after_share": 0.3728,
+     "positions": {
+      "n": 1840,
+      "win_share": 0.3109,
+      "median_roi": -0.0224,
+      "mean_roi": 0.0846,
+      "lost_half_share": 0.0522,
+      "doubled_share": 0.0255
+     }
+    },
+    "loss_before": {
+     "wallets": 292,
+     "profit_after_share": 0.2671,
+     "positions": {
+      "n": 1048,
+      "win_share": 0.2548,
+      "median_roi": -0.0419,
+      "mean_roi": -0.0571,
+      "lost_half_share": 0.1221,
+      "doubled_share": 0.0239
+     }
+    },
+    "new": {
+     "wallets": 1166,
+     "profit_after_share": 0.3388,
+     "positions": {
+      "n": 1659,
+      "win_share": 0.3339,
+      "median_roi": -0.0287,
+      "mean_roi": -0.0154,
+      "lost_half_share": 0.0856,
+      "doubled_share": 0.0078
+     }
+    }
+   }
+  ],
+  "recall": {
+   "x2": 110,
+   "x2_in_clean": 65,
+   "x10": 16,
+   "x10_in_clean": 11,
+   "top10_volume_in_clean": 7,
+   "top10_volume_by_repeat": 1
+  },
+  "largest": {
+   "token": "imeme-2.v2-launchpad.justhoot.near",
+   "share_of_near": 0.1811,
+   "positions": 356,
+   "creator_earlier_launches": 0,
+   "minutes_since_previous": null,
+   "x_max": 143.0,
+   "win_share": 0.4916,
+   "median_roi": -0.0002,
+   "mean_roi": 0.9422,
+   "lost_half_share": 0.0815,
+   "doubled_share": 0.118
   }
  },
  "wallets": {
   "from": "2026-09-29",
   "to": "2026-11-12",
-  "wallets": 10421,
-  "invested_near": 5091147.0,
-  "profitable": 3112,
-  "profitable_share": 0.2986,
-  "median_pnl_near": -0.827,
-  "winners_total_near": 560243.0,
-  "losers_total_near": -607586.0,
-  "net_near": -47343.0,
-  "top1pct_share_of_profit": 0.6811,
+  "wallets": 10428,
+  "invested_near": 5121115.0,
+  "profitable": 3150,
+  "profitable_share": 0.3021,
+  "median_pnl_near": -0.797,
+  "winners_total_near": 570024.0,
+  "losers_total_near": -601785.0,
+  "net_near": -31761.0,
+  "top1pct_share_of_profit": 0.6818,
   "active_ge5_tokens": {
    "wallets": 1558,
-   "profitable_share": 0.3928
+   "profitable_share": 0.3941
   },
   "histogram": [
    {
@@ -1348,42 +1830,42 @@
    {
     "from": -100,
     "to": -10,
-    "wallets": 1916
+    "wallets": 1904
    },
    {
     "from": -10,
     "to": -1,
-    "wallets": 2261
+    "wallets": 2252
    },
    {
     "from": -1,
     "to": 0,
-    "wallets": 2303
+    "wallets": 2297
    },
    {
     "from": 0,
     "to": 1,
-    "wallets": 821
+    "wallets": 815
    },
    {
     "from": 1,
     "to": 10,
-    "wallets": 907
+    "wallets": 928
    },
    {
     "from": 10,
     "to": 100,
-    "wallets": 877
+    "wallets": 889
    },
    {
     "from": 100,
     "to": 1e+18,
-    "wallets": 521
+    "wallets": 528
    }
   ]
  },
  "network": {
-  "near_usd": 3.49,
+  "near_usd": 3.35,
   "days": [
    {
     "day": "2026-11-09",
@@ -1394,7 +1876,7 @@
     "signers": 37498,
     "new_accounts": 2997,
     "burnt_near": 418.79,
-    "fee_per_tx_usd": 0.003566,
+    "fee_per_tx_usd": 0.003423,
     "tps": 4.74
    },
    {
@@ -1406,7 +1888,7 @@
     "signers": 180215,
     "new_accounts": 2625,
     "burnt_near": 956.8,
-    "fee_per_tx_usd": 0.003448,
+    "fee_per_tx_usd": 0.00331,
     "tps": 11.21
    },
    {
@@ -1418,91 +1900,91 @@
     "signers": 78479,
     "new_accounts": 2729,
     "burnt_near": 892.04,
-    "fee_per_tx_usd": 0.003493,
+    "fee_per_tx_usd": 0.003353,
     "tps": 10.32
    },
    {
     "day": "2026-11-12",
     "full": false,
-    "blocks": 61622,
-    "txs": 293306,
-    "receipts": 1437687,
-    "signers": 40909,
-    "new_accounts": 2217,
-    "burnt_near": 297.2,
-    "fee_per_tx_usd": 0.003536,
-    "tps": 3.39
+    "blocks": 91607,
+    "txs": 495752,
+    "receipts": 2524791,
+    "signers": 58971,
+    "new_accounts": 6094,
+    "burnt_near": 541.56,
+    "fee_per_tx_usd": 0.00366,
+    "tps": 5.74
    }
   ]
  },
  "holders": {
-  "tokens": 1858,
+  "tokens": 1844,
   "median": 3.0,
   "p90": 6.0,
-  "le_10_share": 0.9537,
-  "ge_50_share": 0.0145,
-  "ge_100_share": 0.0081,
-  "max": 112
+  "le_10_share": 0.9593,
+  "ge_50_share": 0.0141,
+  "ge_100_share": 0.0076,
+  "max": 110
  },
  "moves": {
   "from": "2026-11-09 13:48",
-  "to": "2026-11-12 09:42",
-  "hours": 67.9,
-  "transfers": 13781,
-  "usd": 564117757,
-  "usd_per_day": 199412533,
+  "to": "2026-11-12 14:36",
+  "hours": 72.8,
+  "transfers": 14794,
+  "usd": 597831650,
+  "usd_per_day": 197115311,
   "by_token": [
    {
     "token": "near",
     "symbol": "NEAR",
-    "usd": 363480537,
-    "share": 0.6443
+    "usd": 386698644,
+    "share": 0.6468
    },
    {
     "token": "nbtc.bridge.near",
     "symbol": "NBTC",
-    "usd": 110631881,
-    "share": 0.1961
+    "usd": 116685831,
+    "share": 0.1952
    },
    {
     "token": "zec.omft.near",
     "symbol": "ZEC",
-    "usd": 52111617,
-    "share": 0.0924
+    "usd": 53552527,
+    "share": 0.0896
    },
    {
     "token": "usdt.tether-token.near",
     "symbol": "USDt",
-    "usd": 12718634,
-    "share": 0.0225
+    "usd": 13336173,
+    "share": 0.0223
    },
    {
     "token": "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
     "symbol": "USDC",
-    "usd": 11209680,
-    "share": 0.0199
+    "usd": 11850039,
+    "share": 0.0198
    },
    {
     "token": "sinu-8.smithii.near",
     "symbol": "SINU",
     "usd": 7992340,
-    "share": 0.0142
+    "share": 0.0134
    }
   ],
   "by_route": {
-   "with a hub or exchange": 0.3951,
-   "wallet to wallet": 0.3873,
-   "with a bridge": 0.2176
+   "wallet to wallet": 0.396,
+   "with a hub or exchange": 0.3869,
+   "with a bridge": 0.2171
   }
  },
  "launch_speed": {
-  "launches": 67,
+  "launches": 69,
   "to_first_trade_s": {
    "median": 3.7,
    "p90": 10.9
   },
   "to_ready_s": {
-   "median": 6.5
+   "median": 6.6
   }
  },
  "near_price": [
@@ -2008,7 +2490,7 @@
   },
   {
    "day": "2026-11-12",
-   "usd": 3.5435
+   "usd": 3.5095
   }
  ]
 }

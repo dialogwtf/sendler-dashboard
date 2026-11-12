@@ -33,9 +33,13 @@ TEXT_MAX = 64
 HARD_CODED = {"near": {"symbol": "NEAR", "name": "NEAR", "decimals": 24, "icon": None}}
 
 
+PRICE_HISTORY = ("wrap.near",)  # rates also kept as an hourly series: the thesis charts NEAR/USD over time
+
+
 class FtPrices:
     def __init__(self, db, session: aiohttp.ClientSession, url: str) -> None:
         self.col = db["ft_prices"]
+        self.history = db["ft_price_snapshots"]
         self.session = session
         self.url = url
 
@@ -45,6 +49,8 @@ class FtPrices:
             data = await r.json(content_type=None)
         now = dt.datetime.now(dt.timezone.utc)
         ops = []
+        hour = now.replace(minute=0, second=0, microsecond=0)
+        history = []
         for token, entry in (data if isinstance(data, dict) else {}).items():
             try:
                 price = float(entry.get("price"))
@@ -52,11 +58,16 @@ class FtPrices:
                 continue
             if not price > 0:
                 continue
+            if token in PRICE_HISTORY:  # the first rate seen in each hour
+                history.append(UpdateOne({"_id": f"{token}:{hour:%Y-%m-%dT%H}"}, {"$setOnInsert": {
+                    "contract_id": token, "ts": hour, "price_usd": price}}, upsert=True))
             ops.append(UpdateOne({"_id": token}, {"$set": {"price_usd": price, "symbol": entry.get("symbol"),
                                                            "decimals": entry.get("decimal"), "updated_at": now}},
                                  upsert=True))
         if ops:
             await self.col.bulk_write(ops, ordered=False)
+        if history:
+            await self.history.bulk_write(history, ordered=False)
         return len(ops)
 
     async def run(self) -> None:

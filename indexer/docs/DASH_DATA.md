@@ -148,6 +148,7 @@ by the API.
 | collection | written by | |
 |---|---|---|
 | `ft_prices` | `reference.FtPrices` | `_id` token, `price_usd`, `symbol`, `decimals` — the REF Finance price list, every minute |
+| `ft_price_snapshots` | `reference.FtPrices` | `_id` `<token>:<hour>`, `contract_id`, `ts`, `price_usd` — hourly NEAR/USD (`wrap.near`), read by `thesis/build.py` |
 | `ft_metadata` | `reference.TokenMeta` | `_id` token, `symbol`, `name`, `decimals`, `icon` — the contract's NEP-148 `ft_metadata`, once per token |
 | `sniper_smart_flows` | `smart.SmartMoney` | `_id` `<wallet>:<token>` — `near_in`, `near_out`, `tok_in`, `tok_out` (raw, float), `buys`, `sells`, `first_at`, `last_at`; NEAR ↔ token swaps only; TTL 45 days |
 | `sniper_smart_prices` | `smart.SmartMoney` | `_id` token, `price` — yocto NEAR per raw unit (last swap) |

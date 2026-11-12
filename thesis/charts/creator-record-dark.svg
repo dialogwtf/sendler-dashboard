@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 332" width="880" height="332" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Who launched a token says how likely it is to run">
+<rect width="880" height="332" fill="#1a1a19"/>
+<text x="24.0" y="30.0" fill="#f0efec" font-size="15" font-weight="600" text-anchor="start">Who launched a token says how likely it is to run</text>
+<text x="24.0" y="49.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="start">Share of launches whose peak price was at least 2x the first trade, by what is known about the creator</text>
+<line x1="400" x2="400" y1="72" y2="316" stroke="#383835"/>
+<text x="388.0" y="93.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">Creator's first launch, bought in and did not dump</text>
+<path d="M400,80 H683.0 Q687.0,80 687.0,84.0 V94.0 Q687.0,98 683.0,98 H400 Z" fill="#3987e5"/>
+<text x="695.0" y="93.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">12.0%</text>
+<text x="739.0" y="93.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">65 of 543</text>
+<text x="388.0" y="127.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">Creator's first launch</text>
+<path d="M400,114 H591.1 Q595.1,114 595.1,118.0 V128.0 Q595.1,132 591.1,132 H400 Z" fill="#3987e5"/>
+<text x="603.1" y="127.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">8.1%</text>
+<text x="639.9" y="127.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">88 of 1,081</text>
+<text x="388.0" y="161.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">All launches</text>
+<path d="M400,148 H541.8 Q545.8,148 545.8,152.0 V162.0 Q545.8,166 541.8,166 H400 Z" fill="#3987e5"/>
+<text x="553.8" y="161.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">6.1%</text>
+<text x="590.6" y="161.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">110 of 1,810</text>
+<text x="388.0" y="195.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">Creator had launched before</text>
+<path d="M400,182 H469.8 Q473.8,182 473.8,186.0 V196.0 Q473.8,200 469.8,200 H400 Z" fill="#3987e5"/>
+<text x="481.8" y="195.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">3.1%</text>
+<text x="518.6" y="195.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">22 of 714</text>
+<text x="388.0" y="229.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">Creator's previous launch was under 3 hours earlier</text>
+<path d="M400,216 H438.7 Q442.7,216 442.7,220.0 V230.0 Q442.7,234 438.7,234 H400 Z" fill="#3987e5"/>
+<text x="450.7" y="229.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">1.8%</text>
+<text x="487.5" y="229.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">7 of 393</text>
+<text x="388.0" y="263.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">Creator dumped within 5 minutes</text>
+<path d="M400,250 H432.9 Q436.9,250 436.9,254.0 V264.0 Q436.9,268 432.9,268 H400 Z" fill="#3987e5"/>
+<text x="444.9" y="263.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">1.5%</text>
+<text x="481.7" y="263.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">5 of 324</text>
+<text x="388.0" y="297.0" fill="#c3c2b7" font-size="12" font-weight="400" text-anchor="end">Creator had launched 3 or more before</text>
+<path d="M400,284 H421.9 Q425.9,284 425.9,288.0 V298.0 Q425.9,302 421.9,302 H400 Z" fill="#3987e5"/>
+<text x="433.9" y="297.0" fill="#f0efec" font-size="12" font-weight="600" text-anchor="start">1.1%</text>
+<text x="470.7" y="297.0" fill="#898781" font-size="11" font-weight="400" text-anchor="start">3 of 277</text>
+</svg>
