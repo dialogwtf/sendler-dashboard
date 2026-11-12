@@ -205,6 +205,8 @@ The original versions of those files are in the commit tagged `pre-hackathon`
 git diff pre-hackathon hackathon-submission --stat
 ```
 
+On GitHub: https://github.com/dialogwtf/sendler-dashboard/compare/pre-hackathon...hackathon-submission
+
 Written inside the window: all of `web/`, all of `api/`, and in `indexer/` — `worker.py`, `trades.py`,
 `launches.py`, `holders.py`, `network.py`, `blocks.py`, `prices.py`, `events.py`, `history.py`, `smart.py`,
 `fee_farm.py`, `reference.py`, the scripts and the tests; and all of `thesis/`.
