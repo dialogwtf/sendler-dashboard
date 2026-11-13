@@ -192,7 +192,7 @@ async def test_wallet_sign_in_nonce_is_one_time(mdb, monkeypatch):
 async def _bot_confirms(db, nonce, ref="abc234", tg_id=42):
     """What the Sendler trade bot writes."""
     await db[cfg.LOGINS].update_one({"_id": nonce, "status": "pending"}, {"$set": {
-        "status": "confirmed", "tg_id": tg_id, "tg_username": "zver", "tg_name": "Z", "ref_code": ref,
+        "status": "confirmed", "tg_id": tg_id, "tg_username": "alice", "tg_name": "A", "ref_code": ref,
         "bot_user": True}})
 
 
